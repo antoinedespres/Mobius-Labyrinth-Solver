@@ -1,0 +1,317 @@
+\hypertarget{labyrinthe_8h}{}\doxysection{Référence du fichier C\+:/\+P\+J\+\_\+\+S\+D\+A/labyrinthe.h}
+\label{labyrinthe_8h}\index{C:/PJ\_SDA/labyrinthe.h@{C:/PJ\_SDA/labyrinthe.h}}
+
+
+Composant labyrinthe Structures de données et algorithmes.  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}pile.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_laby}{Laby}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{labyrinthe_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{labyrinthe_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
+enum \{ {\bfseries N\+B\+D\+E\+PL} = 8, 
+{\bfseries D\+IM} = 3
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{labyrinthe_8h_a01c1137f006923127d77b9c7286c0eb6}{initialiser}} (char $\ast$path, \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Lit un fichier .txt pour initialiser le labyrinthe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labyrinthe_8h_ae10daeec525899ab9f730fa110ab5a8a}{afficher}} (const \mbox{\hyperlink{struct_laby}{Laby}} \&laby, bool mecontent=false)
+\begin{DoxyCompactList}\small\item\em Affiche un labyrinthe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labyrinthe_8h_a325501041b11efdd99b9cb51ffd47bbc}{detruire}} (\mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Désalloue les tableaux représentant les faces d\textquotesingle{}un labyrinthe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_case}{Case}} $\ast$ \mbox{\hyperlink{labyrinthe_8h_af73781b0c230c862b8086f44c671f896}{get\+\_\+case}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&crd, \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Trouver une case. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_case}{Case}} \mbox{\hyperlink{labyrinthe_8h_ab20235b70edf353ea87b6220f380e005}{read\+\_\+case}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&crd, const \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Lire une case. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{labyrinthe_8h_a7b5f74fc1bbb1d6d4589e577b0070c5a}{est\+\_\+case}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&crd, const \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Test d\textquotesingle{}existence d\textquotesingle{}une case. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{labyrinthe_8h_a15961b601cfe8ab3976c9be01789bbef}{translation\+\_\+moebius}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&v1, const \mbox{\hyperlink{struct_vec3}{Vec3}} \&v2, const \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Translation vectorielle selon les contraintes d\textquotesingle{}un ruban de Moebius (inversions en Y aux bordures etc...) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{labyrinthe_8h_a1f927ca31fbfc97126ebcda0113f9768}{crd\+\_\+face\+\_\+unique}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&crd, const \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Vérifie si une case est à visiter ou non. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{labyrinthe_8h_a800b6334aa2f3fc21ee47c2f6161f0cd}{est\+\_\+a\+\_\+visiter}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&c1, const \mbox{\hyperlink{struct_vec3}{Vec3}} \&c2, const \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Vérifie si une case est à visiter ou non. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{labyrinthe_8h_ab2f6f53e3989cc85f0cd055c769fa464}{est\+\_\+connexe}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&c1, const \mbox{\hyperlink{struct_vec3}{Vec3}} \&c2, const \mbox{\hyperlink{struct_laby}{Laby}} \&laby)
+\begin{DoxyCompactList}\small\item\em Vérifie si une case est connexe à une autre (si on peut passer de l\textquotesingle{}une à l\textquotesingle{}autre) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries D\+E\+PL} \mbox{[}N\+B\+D\+E\+PL\mbox{]}\mbox{[}D\+IM\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Composant labyrinthe Structures de données et algorithmes. 
+
+Projet Després\+Gr109\+Nougaret\+Gr109 \begin{DoxyAuthor}{Auteur}
+Antoine Després, Anicet Nougaret 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 06/01/20 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{labyrinthe_8h_ae10daeec525899ab9f730fa110ab5a8a}\label{labyrinthe_8h_ae10daeec525899ab9f730fa110ab5a8a}} 
+\index{labyrinthe.h@{labyrinthe.h}!afficher@{afficher}}
+\index{afficher@{afficher}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby,  }\item[{bool}]{mecontent }\end{DoxyParamCaption})}
+
+
+
+Affiche un labyrinthe. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em laby} & Labyrinthe à afficher \\
+\hline
+ & {\em mecontent} & Affiche le mécontentement du dragon si true (false si non renseigné) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{labyrinthe_8h_a1f927ca31fbfc97126ebcda0113f9768}\label{labyrinthe_8h_a1f927ca31fbfc97126ebcda0113f9768}} 
+\index{labyrinthe.h@{labyrinthe.h}!crd\_face\_unique@{crd\_face\_unique}}
+\index{crd\_face\_unique@{crd\_face\_unique}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{crd\_face\_unique()}{crd\_face\_unique()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} crd\+\_\+face\+\_\+unique (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{crd,  }\item[{const \mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Vérifie si une case est à visiter ou non. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em depart} & Première case \\
+\hline
+\mbox{\texttt{ in}}  & {\em arrivee} & Deuxième case \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true ou false selon que la case soit à visiter ou non
+\end{DoxyReturn}
+Rapporte les coordonnées à un labyrinthe d\textquotesingle{}une seule face 
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em crd} & La coordonnée d\textquotesingle{}entrée \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Nouvelle coordonnée
+\end{DoxyReturn}
+Vérifie si une case est à visiter ou non.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em crd} & La coordonnée d\textquotesingle{}entrée \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Nouvelle coordonnée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{labyrinthe_8h_a325501041b11efdd99b9cb51ffd47bbc}\label{labyrinthe_8h_a325501041b11efdd99b9cb51ffd47bbc}} 
+\index{labyrinthe.h@{labyrinthe.h}!detruire@{detruire}}
+\index{detruire@{detruire}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{detruire()}{detruire()}}
+{\footnotesize\ttfamily void detruire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Désalloue les tableaux représentant les faces d\textquotesingle{}un labyrinthe. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ out}}  & {\em laby} & Labyrinthe à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{labyrinthe_8h_a800b6334aa2f3fc21ee47c2f6161f0cd}\label{labyrinthe_8h_a800b6334aa2f3fc21ee47c2f6161f0cd}} 
+\index{labyrinthe.h@{labyrinthe.h}!est\_a\_visiter@{est\_a\_visiter}}
+\index{est\_a\_visiter@{est\_a\_visiter}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{est\_a\_visiter()}{est\_a\_visiter()}}
+{\footnotesize\ttfamily bool est\+\_\+a\+\_\+visiter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{depart,  }\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{arrivee,  }\item[{const \mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Vérifie si une case est à visiter ou non. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em depart} & Première case \\
+\hline
+\mbox{\texttt{ in}}  & {\em arrivee} & Deuxième case \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true ou false selon que la case soit à visiter ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{labyrinthe_8h_a7b5f74fc1bbb1d6d4589e577b0070c5a}\label{labyrinthe_8h_a7b5f74fc1bbb1d6d4589e577b0070c5a}} 
+\index{labyrinthe.h@{labyrinthe.h}!est\_case@{est\_case}}
+\index{est\_case@{est\_case}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{est\_case()}{est\_case()}}
+{\footnotesize\ttfamily bool est\+\_\+case (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{crd,  }\item[{const \mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Test d\textquotesingle{}existence d\textquotesingle{}une case. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em crd} & Coordonnées d\textquotesingle{}une case \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+false ou true selon l\textquotesingle{}existence ou non de la case 
+\end{DoxyReturn}
+\mbox{\Hypertarget{labyrinthe_8h_ab2f6f53e3989cc85f0cd055c769fa464}\label{labyrinthe_8h_ab2f6f53e3989cc85f0cd055c769fa464}} 
+\index{labyrinthe.h@{labyrinthe.h}!est\_connexe@{est\_connexe}}
+\index{est\_connexe@{est\_connexe}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{est\_connexe()}{est\_connexe()}}
+{\footnotesize\ttfamily bool est\+\_\+connexe (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{depart,  }\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{arrivee,  }\item[{const \mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Vérifie si une case est connexe à une autre (si on peut passer de l\textquotesingle{}une à l\textquotesingle{}autre) 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em depart} & Première case \\
+\hline
+\mbox{\texttt{ in}}  & {\em arrivee} & Deuxième case \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true ou false selon que les deux cases soient connexes ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{labyrinthe_8h_af73781b0c230c862b8086f44c671f896}\label{labyrinthe_8h_af73781b0c230c862b8086f44c671f896}} 
+\index{labyrinthe.h@{labyrinthe.h}!get\_case@{get\_case}}
+\index{get\_case@{get\_case}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{get\_case()}{get\_case()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_case}{Case}}$\ast$ get\+\_\+case (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{crd,  }\item[{\mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Trouver une case. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em crd} & Coordonnées d\textquotesingle{}une case \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{labyrinthe_8h_a01c1137f006923127d77b9c7286c0eb6}\label{labyrinthe_8h_a01c1137f006923127d77b9c7286c0eb6}} 
+\index{labyrinthe.h@{labyrinthe.h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{char $\ast$}]{path,  }\item[{\mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Lit un fichier .txt pour initialiser le labyrinthe. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em path} & Chemin du fichier .txt qui décrit le labyrinthe \\
+\hline
+\mbox{\texttt{ out}}  & {\em laby} & Labyrinthe à initialiser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{labyrinthe_8h_ab20235b70edf353ea87b6220f380e005}\label{labyrinthe_8h_ab20235b70edf353ea87b6220f380e005}} 
+\index{labyrinthe.h@{labyrinthe.h}!read\_case@{read\_case}}
+\index{read\_case@{read\_case}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{read\_case()}{read\_case()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_case}{Case}} read\+\_\+case (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{crd,  }\item[{const \mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Lire une case. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em crd} & Coordonnées d\textquotesingle{}une case \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{labyrinthe_8h_a15961b601cfe8ab3976c9be01789bbef}\label{labyrinthe_8h_a15961b601cfe8ab3976c9be01789bbef}} 
+\index{labyrinthe.h@{labyrinthe.h}!translation\_moebius@{translation\_moebius}}
+\index{translation\_moebius@{translation\_moebius}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{translation\_moebius()}{translation\_moebius()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} translation\+\_\+moebius (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{depart,  }\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{translation,  }\item[{const \mbox{\hyperlink{struct_laby}{Laby}} \&}]{laby }\end{DoxyParamCaption})}
+
+
+
+Translation vectorielle selon les contraintes d\textquotesingle{}un ruban de Moebius (inversions en Y aux bordures etc...) 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em depart} & Loordonnées de départ \\
+\hline
+ & {\em \mbox{[}$\,$\mbox{]}} & translation Translation à réaliser \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nouv Le nouveau vecteur issu de la translation 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Le nombre de lignes d\textquotesingle{}une face est supérieur à nouv.\+y
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em depart} & Coordonnées de départ \\
+\hline
+ & {\em \mbox{[}$\,$\mbox{]}} & translation Translation à réaliser \\
+\hline
+\mbox{\texttt{ in}}  & {\em laby} & Le labyrinthe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nouv Le nouveau vecteur issu de la translation 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Le nombre de lignes d\textquotesingle{}une face est supérieur à nouv.\+y 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{labyrinthe_8h_a1cedd874e7b860b10eae44cba30f3a88}\label{labyrinthe_8h_a1cedd874e7b860b10eae44cba30f3a88}} 
+\index{labyrinthe.h@{labyrinthe.h}!DEPL@{DEPL}}
+\index{DEPL@{DEPL}!labyrinthe.h@{labyrinthe.h}}
+\doxysubsubsection{\texorpdfstring{DEPL}{DEPL}}
+{\footnotesize\ttfamily const int D\+E\+PL\mbox{[}N\+B\+D\+E\+PL\mbox{]}\mbox{[}D\+IM\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{-\/1,0,0\},\{-\/1,1,0\},\{0,1,0\},\{1,1,0\},\{1,0,0\},\{1,-\/1,0\},\{0,-\/1,0\},\{-\/1,-\/1,0\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

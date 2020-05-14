@@ -1,0 +1,224 @@
+\hypertarget{pile_8h}{}\doxysection{Référence du fichier C\+:/\+P\+J\+\_\+\+S\+D\+A/pile.h}
+\label{pile_8h}\index{C:/PJ\_SDA/pile.h@{C:/PJ\_SDA/pile.h}}
+
+
+Composant \mbox{\hyperlink{struct_pile}{Pile}} Structures de données et algorithmes.  
+
+
+{\ttfamily \#include \char`\"{}tableau2\+D.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_pile}{Pile}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pile_8h_a0f64868948f4ec25e25b900d78dc5b03}{initialiser}} (unsigned int n, unsigned int p, \mbox{\hyperlink{struct_pile}{Pile}} \&pile)
+\begin{DoxyCompactList}\small\item\em Initialiser une pile vide la pile est allouée en mémoire dynamique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pile_8h_acb921a706453e114e6dc663b4a5324d9}{empiler}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&it, \mbox{\hyperlink{struct_pile}{Pile}} \&pile)
+\begin{DoxyCompactList}\small\item\em Empiler un item sur une pile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pile_8h_a8b3b37884e20c6815951bc9408a5ee38}{depiler}} (\mbox{\hyperlink{struct_pile}{Pile}} \&pile)
+\begin{DoxyCompactList}\small\item\em Dépiler l\textquotesingle{}item au sommet de pile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{pile_8h_ad9035b858b225127210378e9c5234861}{sommet}} (const \mbox{\hyperlink{struct_pile}{Pile}} \&pile)
+\begin{DoxyCompactList}\small\item\em Lire l\textquotesingle{}item au sommet de la pile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pile_8h_a2768c7cefd56136f83840228e374470b}{detruire}} (\mbox{\hyperlink{struct_pile}{Pile}} \&pile)
+\begin{DoxyCompactList}\small\item\em Désallouer une pile. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{pile_8h_ae27db206e4e078b9ed06fab11258c867}{est\+\_\+vide}} (const \mbox{\hyperlink{struct_pile}{Pile}} \&pile)
+\begin{DoxyCompactList}\small\item\em Test de pile vide. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pile_8h_ac8874fd7dfed5ba5bee5b9209157f39c}{afficher}} (const \mbox{\hyperlink{struct_pile}{Pile}} \&pile)
+\begin{DoxyCompactList}\small\item\em Affichage des coordonnées du chemin selon la mise en forme prévue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Composant \mbox{\hyperlink{struct_pile}{Pile}} Structures de données et algorithmes. 
+
+Projet Després\+Gr109\+Nougaret\+Gr109 \begin{DoxyAuthor}{Auteur}
+Antoine Després, Anicet Nougaret 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 06/01/20 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{pile_8h_ac8874fd7dfed5ba5bee5b9209157f39c}\label{pile_8h_ac8874fd7dfed5ba5bee5b9209157f39c}} 
+\index{pile.h@{pile.h}!afficher@{afficher}}
+\index{afficher@{afficher}!pile.h@{pile.h}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pile}{Pile}} \&}]{pile }\end{DoxyParamCaption})}
+
+
+
+Affichage des coordonnées du chemin selon la mise en forme prévue. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em pile} & La pile contenant les coordonnées\\
+\hline
+\end{DoxyParams}
+Affichage des coordonnées du chemin selon la mise en forme prévue.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em pile} & La pile contenant les coordonn�es \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pile_8h_a8b3b37884e20c6815951bc9408a5ee38}\label{pile_8h_a8b3b37884e20c6815951bc9408a5ee38}} 
+\index{pile.h@{pile.h}!depiler@{depiler}}
+\index{depiler@{depiler}!pile.h@{pile.h}}
+\doxysubsubsection{\texorpdfstring{depiler()}{depiler()}}
+{\footnotesize\ttfamily void depiler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pile}{Pile}} \&}]{pile }\end{DoxyParamCaption})}
+
+
+
+Dépiler l\textquotesingle{}item au sommet de pile. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in,out}}  & {\em pile} & La pile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Précondition}
+la pile n\textquotesingle{}est pas vide
+\end{DoxyPrecond}
+Dépiler l\textquotesingle{}item au sommet de pile.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in,out}}  & {\em pile} & La pile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Précondition}
+la pile n\textquotesingle{}est pas vide 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{pile_8h_a2768c7cefd56136f83840228e374470b}\label{pile_8h_a2768c7cefd56136f83840228e374470b}} 
+\index{pile.h@{pile.h}!detruire@{detruire}}
+\index{detruire@{detruire}!pile.h@{pile.h}}
+\doxysubsubsection{\texorpdfstring{detruire()}{detruire()}}
+{\footnotesize\ttfamily void detruire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pile}{Pile}} \&}]{pile }\end{DoxyParamCaption})}
+
+
+
+Désallouer une pile. 
+
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{pile_8h_a0f64868948f4ec25e25b900d78dc5b03}{initialiser}}, la pile a déjà été initialisée 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ out}}  & {\em pile} & La pile à désallouer\\
+\hline
+\end{DoxyParams}
+Désallouer une pile.
+
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{pile_8h_a0f64868948f4ec25e25b900d78dc5b03}{initialiser}}, la pile a d�j� �t� initialis�e 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ out}}  & {\em pile} & La pile � d�sallouer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pile_8h_acb921a706453e114e6dc663b4a5324d9}\label{pile_8h_acb921a706453e114e6dc663b4a5324d9}} 
+\index{pile.h@{pile.h}!empiler@{empiler}}
+\index{empiler@{empiler}!pile.h@{pile.h}}
+\doxysubsubsection{\texorpdfstring{empiler()}{empiler()}}
+{\footnotesize\ttfamily void empiler (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{it,  }\item[{\mbox{\hyperlink{struct_pile}{Pile}} \&}]{pile }\end{DoxyParamCaption})}
+
+
+
+Empiler un item sur une pile. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em it} & L\textquotesingle{}item à empiler \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pile} & La pile\\
+\hline
+\mbox{\texttt{ in}}  & {\em it} & L\textquotesingle{}item � empiler \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pile} & La pile \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pile_8h_ae27db206e4e078b9ed06fab11258c867}\label{pile_8h_ae27db206e4e078b9ed06fab11258c867}} 
+\index{pile.h@{pile.h}!est\_vide@{est\_vide}}
+\index{est\_vide@{est\_vide}!pile.h@{pile.h}}
+\doxysubsubsection{\texorpdfstring{est\_vide()}{est\_vide()}}
+{\footnotesize\ttfamily bool est\+\_\+vide (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pile}{Pile}} \&}]{pile }\end{DoxyParamCaption})}
+
+
+
+Test de pile vide. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em pile} & La pile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si p est vide, false sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pile_8h_a0f64868948f4ec25e25b900d78dc5b03}\label{pile_8h_a0f64868948f4ec25e25b900d78dc5b03}} 
+\index{pile.h@{pile.h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!pile.h@{pile.h}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{unsigned int}]{n,  }\item[{unsigned int}]{p,  }\item[{\mbox{\hyperlink{struct_pile}{Pile}} \&}]{pile }\end{DoxyParamCaption})}
+
+
+
+Initialiser une pile vide la pile est allouée en mémoire dynamique. 
+
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{pile_8h_a2768c7cefd56136f83840228e374470b}{detruire}} pour une désallocation en fin d\textquotesingle{}utilisation 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em n} & La capacité de la pile \\
+\hline
+\mbox{\texttt{ in}}  & {\em p} & Le pas d\textquotesingle{}extension de la pile \\
+\hline
+\mbox{\texttt{ out}}  & {\em pile} & La pile à initialiser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Précondition}
+n$>$0
+\end{DoxyPrecond}
+Initialiser une pile vide la pile est allouée en mémoire dynamique.
+
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{pile_8h_a2768c7cefd56136f83840228e374470b}{detruire}} pour une d�sallocation en fin d\textquotesingle{}utilisation 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em n} & La capacit� de la pile \\
+\hline
+\mbox{\texttt{ in}}  & {\em p} & Le pas d\textquotesingle{}extension de la pile \\
+\hline
+\mbox{\texttt{ out}}  & {\em pile} & La pile � initialiser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Précondition}
+n$>$0 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{pile_8h_ad9035b858b225127210378e9c5234861}\label{pile_8h_ad9035b858b225127210378e9c5234861}} 
+\index{pile.h@{pile.h}!sommet@{sommet}}
+\index{sommet@{sommet}!pile.h@{pile.h}}
+\doxysubsubsection{\texorpdfstring{sommet()}{sommet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} sommet (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pile}{Pile}} \&}]{pile }\end{DoxyParamCaption})}
+
+
+
+Lire l\textquotesingle{}item au sommet de la pile. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em pile} & La pile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la valeur de l\textquotesingle{}item au sommet de la pile 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+la pile n\textquotesingle{}est pas vide 
+\end{DoxyPrecond}

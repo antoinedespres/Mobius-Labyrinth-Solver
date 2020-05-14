@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="item_8cpp" kind="file" language="C++">
+    <compoundname>item.cpp</compoundname>
+    <includes refid="item_8h" local="yes">item.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="4">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/item.cpp</label>
+        <link refid="item_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="item_8cpp_1a1adc0a2d8a310166ef1696c4badaa0ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher</definition>
+        <argsstring>(const Item &amp;it)</argsstring>
+        <name>afficher</name>
+        <param>
+          <type>const <ref refid="struct_case" kindref="compound">Item</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Affiche la version chaîne de caractères d&apos;un item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item à afficher </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Il existe une fonction string permettant de convertir le type représenté par un Item en chaîne de caractères. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/item.cpp" line="18" column="6" bodyfile="C:/PJ_SDA/item.cpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant Item Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="item_8h" kindref="compound">item.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="item_8cpp_1a1adc0a2d8a310166ef1696c4badaa0ef" kindref="member">afficher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Item</ref>&amp;<sp/>it)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str<sp/>=<sp/><ref refid="case_8cpp_1ad95785d41b5cf7e883e4361d26f496cd" kindref="member">string</ref>(it);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>str;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>str;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/item.cpp"/>
+  </compounddef>
+</doxygen>

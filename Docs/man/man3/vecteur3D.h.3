@@ -1,0 +1,174 @@
+.TH "C:/PJ_SDA/vecteur3D.h" 3 "Vendredi 3 Janvier 2020" "Version sp5_03.01.2020" "SDA 2019-20 Ruban de Möbius" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/PJ_SDA/vecteur3D.h \- Composant vecteur 3D Structures de données et algorithmes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <cassert>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBVec3\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "\fBVec3\fP \fBtuple\fP (int x, int y, int z)"
+.br
+.RI "Création d'un vecteur à trois coordonnées\&. "
+.ti -1c
+.RI "\fBVec3\fP \fBfrom_list\fP (const int crd[3])"
+.br
+.RI "Passage d'un tableau de 3 entiers à un Vecteur 3\&. "
+.ti -1c
+.RI "void \fBafficher\fP (const \fBVec3\fP &v)"
+.br
+.RI "Affichage (x,y,z) d'un Vecteur 3\&. "
+.ti -1c
+.RI "bool \fBegal\fP (const \fBVec3\fP &v1, const \fBVec3\fP &v2)"
+.br
+.RI "Test d'égalité entre deux Vecteurs 3 (ssi toutes coordonnées égales) "
+.ti -1c
+.RI "\fBVec3\fP \fBinv_y\fP (const \fBVec3\fP &v, const int max_y)"
+.br
+.RI "Inversion des ordonnées d'un Vecteur 3 par rapport au y_max\&. "
+.in -1c
+.SH "Description détaillée"
+.PP 
+Composant vecteur 3D Structures de données et algorithmes\&. 
+
+Projet DesprésGr109NougaretGr109 
+.PP
+\fBAuteur\fP
+.RS 4
+Antoine Després, Anicet Nougaret 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1 06/01/20 
+.RE
+.PP
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void afficher (const \fBVec3\fP & v)"
+
+.PP
+Affichage (x,y,z) d'un Vecteur 3\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIv\fP Coordonnées d'une case
+.br
+\fICoordonnées\fP d'une case 
+.RE
+.PP
+
+.SS "bool egal (const \fBVec3\fP & v1, const \fBVec3\fP & v2)"
+
+.PP
+Test d'égalité entre deux Vecteurs 3 (ssi toutes coordonnées égales) 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIv1\fP Vremier vecteur 
+.br
+\fIv2\fP Vecond vecteur 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+true si toutes les coordonnées sont égales, false sinon
+.RE
+.PP
+\fBParamètres\fP
+.RS 4
+\fIv1\fP Premier vecteur 
+.br
+\fIv2\fP Second vecteur 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+true si toutes les coordonnées sont égales, false sinon 
+.RE
+.PP
+
+.SS "\fBVec3\fP from_list (const int crd[3])"
+
+.PP
+Passage d'un tableau de 3 entiers à un Vecteur 3\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIcrd\fP Vableau de 3 entiers 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Vecteur 3 issu de la conversion
+.RE
+.PP
+\fBParamètres\fP
+.RS 4
+\fIcrd\fP Tableau de 3 entiers 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Vecteur 3 issu de la conversion 
+.RE
+.PP
+
+.SS "\fBVec3\fP inv_y (const \fBVec3\fP & v, const int max_y)"
+
+.PP
+Inversion des ordonnées d'un Vecteur 3 par rapport au y_max\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIv\fP Vecteur 3D 
+.br
+\fImax_y\fP Valeur maximale d'ordonnée 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Vecteur avec coordonnée y inversée 
+.RE
+.PP
+
+.SS "\fBVec3\fP tuple (int x, int y, int z)"
+
+.PP
+Création d'un vecteur à trois coordonnées\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIx\fP Coordonnée d'abscisse 
+.br
+\fIy\fP Coordonnée d'ordonnée 
+.br
+\fIz\fP Numéro de face 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Le vecteur v 
+.RE
+.PP
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour SDA 2019-20 Ruban de Möbius à partir du code source\&.

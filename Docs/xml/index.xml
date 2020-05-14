@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="struct_case" kind="struct"><name>Case</name>
+    <member refid="struct_case_1af00f19f007914e43357703733153ff3a" kind="variable"><name>type</name></member>
+    <member refid="struct_case_1a78adcebc7f453f027a72689bc3686bc3" kind="variable"><name>crd</name></member>
+    <member refid="struct_case_1ac2c896cb7975a9abce4f3a3927868951" kind="variable"><name>visite</name></member>
+    <member refid="struct_case_1af993e720657af9706b9c50d63c5212a2" kind="variable"><name>dans_chemin</name></member>
+    <member refid="struct_case_1a0db792a57c216e9f303e73995e0d572d" kind="variable"><name>ordre</name></member>
+  </compound>
+  <compound refid="struct_laby" kind="struct"><name>Laby</name>
+    <member refid="struct_laby_1a9ff51aa8c67ca3bccddf42c46def3d95" kind="enum"><name>@1</name></member>
+    <member refid="struct_laby_1a9ff51aa8c67ca3bccddf42c46def3d95a30be3645f50ead34a95415ef8996c649" kind="enumvalue"><name>NBFACE</name></member>
+    <member refid="struct_laby_1a6ca583540df090994d62318da8ab68c3" kind="variable"><name>faces</name></member>
+    <member refid="struct_laby_1a40fb6548f8d6cb576adf6426f08db508" kind="variable"><name>crd_dragon</name></member>
+  </compound>
+  <compound refid="struct_pile" kind="struct"><name>Pile</name>
+    <member refid="struct_pile_1aae4ad1fa4708655be2a1037090238f8c" kind="variable"><name>tab</name></member>
+    <member refid="struct_pile_1ab9eae425fcc9a612116551ed4e93f7f5" kind="variable"><name>nbEl</name></member>
+    <member refid="struct_pile_1af4504a41875ec5066d655742cc1344d3" kind="variable"><name>pas</name></member>
+    <member refid="struct_pile_1a1dacdd09e0af7cc2b952acf95e0b23dd" kind="variable"><name>cap</name></member>
+  </compound>
+  <compound refid="struct_tab2" kind="struct"><name>Tab2</name>
+    <member refid="struct_tab2_1a5dcb60692eca609da48435eb7ff20d68" kind="variable"><name>mat</name></member>
+    <member refid="struct_tab2_1a4c46642b6390cc55511478e46291acbb" kind="variable"><name>used</name></member>
+    <member refid="struct_tab2_1ae67bd14528f582341576c0fcc1363c83" kind="variable"><name>nbC</name></member>
+    <member refid="struct_tab2_1aa17b7f1df5f40792cf78446307a33cef" kind="variable"><name>nbL</name></member>
+  </compound>
+  <compound refid="struct_vec3" kind="struct"><name>Vec3</name>
+    <member refid="struct_vec3_1a47ccb74f80c697cf605475aa53e541ea" kind="variable"><name>x</name></member>
+    <member refid="struct_vec3_1a836a1434ee2b949cd24d356afcaf56b4" kind="variable"><name>y</name></member>
+    <member refid="struct_vec3_1ae81b73bbda5bfa26b648a44158bf6d36" kind="variable"><name>z</name></member>
+  </compound>
+  <compound refid="case_8cpp" kind="file"><name>case.cpp</name>
+    <member refid="case_8cpp_1abe9e4a9bfad2f7b0ba14be152e7e78eb" kind="function"><name>est_valide</name></member>
+    <member refid="case_8cpp_1ad95785d41b5cf7e883e4361d26f496cd" kind="function"><name>string</name></member>
+    <member refid="case_8cpp_1a424eea0feba95b8174bd93553480999d" kind="function"><name>initialiser</name></member>
+    <member refid="case_8cpp_1a120879ea632907df9cd09960b53bf658" kind="function"><name>afficher_crd</name></member>
+  </compound>
+  <compound refid="case_8h" kind="file"><name>case.h</name>
+    <member refid="case_8h_1a0b480ec328ec535b1645b20a2c4d4625" kind="enum"><name>typeCase</name></member>
+    <member refid="case_8h_1a0b480ec328ec535b1645b20a2c4d4625a4812eae6f742a8f18779779eeeffd570" kind="enumvalue"><name>MUR</name></member>
+    <member refid="case_8h_1a0b480ec328ec535b1645b20a2c4d4625a1f28516effaf97bbdd06327a6c68cbf8" kind="enumvalue"><name>CHEMIN</name></member>
+    <member refid="case_8h_1a0b480ec328ec535b1645b20a2c4d4625a715823e7de6bbbbdd0de7fe00a9c05d6" kind="enumvalue"><name>DRAGON</name></member>
+    <member refid="case_8h_1a0b480ec328ec535b1645b20a2c4d4625a3601a95e2ce898de37b12d6a95189273" kind="enumvalue"><name>PLAN</name></member>
+    <member refid="case_8h_1abe9e4a9bfad2f7b0ba14be152e7e78eb" kind="function"><name>est_valide</name></member>
+    <member refid="case_8h_1a0599e04e3afd86b70d9631d30cadec6b" kind="function"><name>string</name></member>
+    <member refid="case_8h_1a424eea0feba95b8174bd93553480999d" kind="function"><name>initialiser</name></member>
+    <member refid="case_8h_1a120879ea632907df9cd09960b53bf658" kind="function"><name>afficher_crd</name></member>
+  </compound>
+  <compound refid="in_large_8txt" kind="file"><name>inLarge.txt</name>
+  </compound>
+  <compound refid="in_medium_8txt" kind="file"><name>inMedium.txt</name>
+  </compound>
+  <compound refid="in_small_8txt" kind="file"><name>inSmall.txt</name>
+  </compound>
+  <compound refid="item_8cpp" kind="file"><name>item.cpp</name>
+    <member refid="item_8cpp_1a1adc0a2d8a310166ef1696c4badaa0ef" kind="function"><name>afficher</name></member>
+  </compound>
+  <compound refid="item_8h" kind="file"><name>item.h</name>
+    <member refid="item_8h_1a68ed140e2f36d70de53243b8ca74836f" kind="typedef"><name>Item</name></member>
+    <member refid="item_8h_1a1adc0a2d8a310166ef1696c4badaa0ef" kind="function"><name>afficher</name></member>
+  </compound>
+  <compound refid="laby_game_8cpp" kind="file"><name>labyGame.cpp</name>
+    <member refid="laby_game_8cpp_1a546f83178846a221367cb402763c2c11" kind="define"><name>PILE_CAP</name></member>
+    <member refid="laby_game_8cpp_1a45a82ef6ea9b70fcb057e45febdc0237" kind="define"><name>PILE_PAS</name></member>
+    <member refid="laby_game_8cpp_1adec24760babd442c43aace3b514d7a5d" kind="function"><name>maj_chemin</name></member>
+    <member refid="laby_game_8cpp_1aaf229a2ed61a835a28258b1a8e588be5" kind="function"><name>MissionDragon</name></member>
+  </compound>
+  <compound refid="laby_game_8h" kind="file"><name>labyGame.h</name>
+    <member refid="laby_game_8h_1adec24760babd442c43aace3b514d7a5d" kind="function"><name>maj_chemin</name></member>
+    <member refid="laby_game_8h_1aaf229a2ed61a835a28258b1a8e588be5" kind="function"><name>MissionDragon</name></member>
+  </compound>
+  <compound refid="labyrinthe_8cpp" kind="file"><name>labyrinthe.cpp</name>
+    <member refid="labyrinthe_8cpp_1a01c1137f006923127d77b9c7286c0eb6" kind="function"><name>initialiser</name></member>
+    <member refid="labyrinthe_8cpp_1a011a0d1c34d99d613d8e493cb5bd295c" kind="function"><name>afficher</name></member>
+    <member refid="labyrinthe_8cpp_1a325501041b11efdd99b9cb51ffd47bbc" kind="function"><name>detruire</name></member>
+    <member refid="labyrinthe_8cpp_1af73781b0c230c862b8086f44c671f896" kind="function"><name>get_case</name></member>
+    <member refid="labyrinthe_8cpp_1ab20235b70edf353ea87b6220f380e005" kind="function"><name>read_case</name></member>
+    <member refid="labyrinthe_8cpp_1a7b5f74fc1bbb1d6d4589e577b0070c5a" kind="function"><name>est_case</name></member>
+    <member refid="labyrinthe_8cpp_1a1d7b7bf79bf2318a91dd188981a6bd70" kind="function"><name>translation_moebius</name></member>
+    <member refid="labyrinthe_8cpp_1a1f927ca31fbfc97126ebcda0113f9768" kind="function"><name>crd_face_unique</name></member>
+    <member refid="labyrinthe_8cpp_1a9b20ebadcfc3b91b892b8a0bb31e2ba7" kind="function"><name>est_a_visiter</name></member>
+    <member refid="labyrinthe_8cpp_1a6ddcad44d85059082874d9a81129113c" kind="function"><name>est_connexe</name></member>
+  </compound>
+  <compound refid="labyrinthe_8h" kind="file"><name>labyrinthe.h</name>
+    <member refid="labyrinthe_8h_1a06fc87d81c62e9abb8790b6e5713c55b" kind="enum"><name>@0</name></member>
+    <member refid="labyrinthe_8h_1a06fc87d81c62e9abb8790b6e5713c55bad9318cb7ff725ec89efc9d1c8a309ba3" kind="enumvalue"><name>NBDEPL</name></member>
+    <member refid="labyrinthe_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6c8e5f290be4be86fd5e7048654b4a50" kind="enumvalue"><name>DIM</name></member>
+    <member refid="labyrinthe_8h_1a1cedd874e7b860b10eae44cba30f3a88" kind="variable"><name>DEPL</name></member>
+    <member refid="labyrinthe_8h_1a01c1137f006923127d77b9c7286c0eb6" kind="function"><name>initialiser</name></member>
+    <member refid="labyrinthe_8h_1ae10daeec525899ab9f730fa110ab5a8a" kind="function"><name>afficher</name></member>
+    <member refid="labyrinthe_8h_1a325501041b11efdd99b9cb51ffd47bbc" kind="function"><name>detruire</name></member>
+    <member refid="labyrinthe_8h_1af73781b0c230c862b8086f44c671f896" kind="function"><name>get_case</name></member>
+    <member refid="labyrinthe_8h_1ab20235b70edf353ea87b6220f380e005" kind="function"><name>read_case</name></member>
+    <member refid="labyrinthe_8h_1a7b5f74fc1bbb1d6d4589e577b0070c5a" kind="function"><name>est_case</name></member>
+    <member refid="labyrinthe_8h_1a15961b601cfe8ab3976c9be01789bbef" kind="function"><name>translation_moebius</name></member>
+    <member refid="labyrinthe_8h_1a1f927ca31fbfc97126ebcda0113f9768" kind="function"><name>crd_face_unique</name></member>
+    <member refid="labyrinthe_8h_1a800b6334aa2f3fc21ee47c2f6161f0cd" kind="function"><name>est_a_visiter</name></member>
+    <member refid="labyrinthe_8h_1ab2f6f53e3989cc85f0cd055c769fa464" kind="function"><name>est_connexe</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="out_8txt" kind="file"><name>out.txt</name>
+  </compound>
+  <compound refid="pile_8cpp" kind="file"><name>pile.cpp</name>
+    <member refid="pile_8cpp_1a0f64868948f4ec25e25b900d78dc5b03" kind="function"><name>initialiser</name></member>
+    <member refid="pile_8cpp_1acb921a706453e114e6dc663b4a5324d9" kind="function"><name>empiler</name></member>
+    <member refid="pile_8cpp_1a8b3b37884e20c6815951bc9408a5ee38" kind="function"><name>depiler</name></member>
+    <member refid="pile_8cpp_1ad9035b858b225127210378e9c5234861" kind="function"><name>sommet</name></member>
+    <member refid="pile_8cpp_1a2768c7cefd56136f83840228e374470b" kind="function"><name>detruire</name></member>
+    <member refid="pile_8cpp_1ae27db206e4e078b9ed06fab11258c867" kind="function"><name>est_vide</name></member>
+    <member refid="pile_8cpp_1ac8874fd7dfed5ba5bee5b9209157f39c" kind="function"><name>afficher</name></member>
+  </compound>
+  <compound refid="pile_8h" kind="file"><name>pile.h</name>
+    <member refid="pile_8h_1a0f64868948f4ec25e25b900d78dc5b03" kind="function"><name>initialiser</name></member>
+    <member refid="pile_8h_1acb921a706453e114e6dc663b4a5324d9" kind="function"><name>empiler</name></member>
+    <member refid="pile_8h_1a8b3b37884e20c6815951bc9408a5ee38" kind="function"><name>depiler</name></member>
+    <member refid="pile_8h_1ad9035b858b225127210378e9c5234861" kind="function"><name>sommet</name></member>
+    <member refid="pile_8h_1a2768c7cefd56136f83840228e374470b" kind="function"><name>detruire</name></member>
+    <member refid="pile_8h_1ae27db206e4e078b9ed06fab11258c867" kind="function"><name>est_vide</name></member>
+    <member refid="pile_8h_1ac8874fd7dfed5ba5bee5b9209157f39c" kind="function"><name>afficher</name></member>
+  </compound>
+  <compound refid="tableau2_d_8cpp" kind="file"><name>tableau2D.cpp</name>
+    <member refid="tableau2_d_8cpp_1a0f974639e72da3b04404015ca888573c" kind="function"><name>initialiser</name></member>
+    <member refid="tableau2_d_8cpp_1ac59d14ce7a8df3fe5f7a66f208de09ba" kind="function"><name>write</name></member>
+    <member refid="tableau2_d_8cpp_1a9c29d292cab9217d9265d021710c71b9" kind="function"><name>get</name></member>
+    <member refid="tableau2_d_8cpp_1aefb6a5993417064f268de6024e4ce164" kind="function"><name>read</name></member>
+    <member refid="tableau2_d_8cpp_1a0a5e08e91eef285cad9be3ac14cccaa4" kind="function"><name>afficher</name></member>
+    <member refid="tableau2_d_8cpp_1ac4c2c2660fa515f629c26682a4e61b17" kind="function"><name>detruire</name></member>
+  </compound>
+  <compound refid="tableau2_d_8h" kind="file"><name>tableau2D.h</name>
+    <member refid="tableau2_d_8h_1a0f974639e72da3b04404015ca888573c" kind="function"><name>initialiser</name></member>
+    <member refid="tableau2_d_8h_1ac59d14ce7a8df3fe5f7a66f208de09ba" kind="function"><name>write</name></member>
+    <member refid="tableau2_d_8h_1a9c29d292cab9217d9265d021710c71b9" kind="function"><name>get</name></member>
+    <member refid="tableau2_d_8h_1aefb6a5993417064f268de6024e4ce164" kind="function"><name>read</name></member>
+    <member refid="tableau2_d_8h_1a0a5e08e91eef285cad9be3ac14cccaa4" kind="function"><name>afficher</name></member>
+    <member refid="tableau2_d_8h_1ac4c2c2660fa515f629c26682a4e61b17" kind="function"><name>detruire</name></member>
+  </compound>
+  <compound refid="vecteur3_d_8cpp" kind="file"><name>vecteur3D.cpp</name>
+    <member refid="vecteur3_d_8cpp_1ac464ede94b2cb4d8d0101f8653c0f31c" kind="function"><name>tuple</name></member>
+    <member refid="vecteur3_d_8cpp_1a2e4cb136cbf6d5cbda8233914cf8cd5d" kind="function"><name>from_list</name></member>
+    <member refid="vecteur3_d_8cpp_1aad53320b8ee804e6ea290d2ef538ba63" kind="function"><name>afficher</name></member>
+    <member refid="vecteur3_d_8cpp_1ab7192a0ac784aa3ed46139dc68c523e7" kind="function"><name>egal</name></member>
+    <member refid="vecteur3_d_8cpp_1a67a54f5ee9fb0739c913afba4fa7badf" kind="function"><name>inv_y</name></member>
+  </compound>
+  <compound refid="vecteur3_d_8h" kind="file"><name>vecteur3D.h</name>
+    <member refid="vecteur3_d_8h_1ac464ede94b2cb4d8d0101f8653c0f31c" kind="function"><name>tuple</name></member>
+    <member refid="vecteur3_d_8h_1a2e4cb136cbf6d5cbda8233914cf8cd5d" kind="function"><name>from_list</name></member>
+    <member refid="vecteur3_d_8h_1aad53320b8ee804e6ea290d2ef538ba63" kind="function"><name>afficher</name></member>
+    <member refid="vecteur3_d_8h_1ab7192a0ac784aa3ed46139dc68c523e7" kind="function"><name>egal</name></member>
+    <member refid="vecteur3_d_8h_1a67a54f5ee9fb0739c913afba4fa7badf" kind="function"><name>inv_y</name></member>
+  </compound>
+</doxygenindex>

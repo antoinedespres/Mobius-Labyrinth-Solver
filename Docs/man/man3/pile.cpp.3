@@ -1,0 +1,184 @@
+.TH "C:/PJ_SDA/pile.cpp" 3 "Vendredi 3 Janvier 2020" "Version sp5_03.01.2020" "SDA 2019-20 Ruban de M√∂bius" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/PJ_SDA/pile.cpp \- Composant \fBPile\fP Structures de donnÈes et algorithmes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'pile\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitialiser\fP (unsigned int n, unsigned int p, \fBPile\fP &pile)"
+.br
+.RI "Initialiser une pile vide la pile est allouÈe en mÈmoire dynamique\&. "
+.ti -1c
+.RI "void \fBempiler\fP (const \fBVec3\fP &it, \fBPile\fP &pile)"
+.br
+.RI "Empiler un item sur une pile\&. "
+.ti -1c
+.RI "void \fBdepiler\fP (\fBPile\fP &pile)"
+.br
+.RI "DÈpiler l'item au sommet de pile\&. "
+.ti -1c
+.RI "\fBVec3\fP \fBsommet\fP (const \fBPile\fP &pile)"
+.br
+.RI "Lire l'item au sommet de la pile\&. "
+.ti -1c
+.RI "void \fBdetruire\fP (\fBPile\fP &pile)"
+.br
+.RI "DÈsallouer une pile\&. "
+.ti -1c
+.RI "bool \fBest_vide\fP (const \fBPile\fP &pile)"
+.br
+.RI "Test de pile vide\&. "
+.ti -1c
+.RI "void \fBafficher\fP (const \fBPile\fP &pile)"
+.br
+.RI "Affichage des coordonnÈes du chemin selon la mise en forme prÈvue\&. "
+.in -1c
+.SH "Description d√©taill√©e"
+.PP 
+Composant \fBPile\fP Structures de donnÈes et algorithmes\&. 
+
+Projet DesprÈsGr109NougaretGr109 
+.PP
+\fBAuteur\fP
+.RS 4
+Antoine DesprÈs, Anicet Nougaret 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1 06/01/20 
+.RE
+.PP
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void afficher (const \fBPile\fP & pile)"
+
+.PP
+Affichage des coordonnÈes du chemin selon la mise en forme prÈvue\&. Affichage des coordonn√©es du chemin selon la mise en forme pr√©vue\&.
+.PP
+\fBParam√®tres\fP
+.RS 4
+\fIpile\fP La pile contenant les coordonnÈes 
+.RE
+.PP
+
+.SS "void depiler (\fBPile\fP & pile)"
+
+.PP
+DÈpiler l'item au sommet de pile\&. D√©piler l'item au sommet de pile\&.
+.PP
+\fBParam√®tres\fP
+.RS 4
+\fIpile\fP La pile 
+.RE
+.PP
+\fBPr√©condition\fP
+.RS 4
+la pile n'est pas vide 
+.RE
+.PP
+
+.SS "void detruire (\fBPile\fP & pile)"
+
+.PP
+DÈsallouer une pile\&. D√©sallouer une pile\&.
+.PP
+\fBVoir √©galement\fP
+.RS 4
+\fBinitialiser\fP, la pile a dÈj‡ ÈtÈ initialisÈe 
+.RE
+.PP
+\fBParam√®tres\fP
+.RS 4
+\fIpile\fP La pile ‡ dÈsallouer 
+.RE
+.PP
+
+.SS "void empiler (const \fBVec3\fP & it, \fBPile\fP & pile)"
+
+.PP
+Empiler un item sur une pile\&. 
+.PP
+\fBParam√®tres\fP
+.RS 4
+\fIit\fP L'item ‡ empiler 
+.br
+\fIpile\fP La pile 
+.RE
+.PP
+
+.SS "bool est_vide (const \fBPile\fP & pile)"
+
+.PP
+Test de pile vide\&. 
+.PP
+\fBParam√®tres\fP
+.RS 4
+\fIpile\fP La pile 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+true si p est vide, false sinon 
+.RE
+.PP
+
+.SS "void initialiser (unsigned int n, unsigned int p, \fBPile\fP & pile)"
+
+.PP
+Initialiser une pile vide la pile est allouÈe en mÈmoire dynamique\&. Initialiser une pile vide la pile est allou√©e en m√©moire dynamique\&.
+.PP
+\fBVoir √©galement\fP
+.RS 4
+\fBdetruire\fP pour une dÈsallocation en fin d'utilisation 
+.RE
+.PP
+\fBParam√®tres\fP
+.RS 4
+\fIn\fP La capacitÈ de la pile 
+.br
+\fIp\fP Le pas d'extension de la pile 
+.br
+\fIpile\fP La pile ‡ initialiser 
+.RE
+.PP
+\fBPr√©condition\fP
+.RS 4
+n>0 
+.RE
+.PP
+
+.SS "\fBVec3\fP sommet (const \fBPile\fP & pile)"
+
+.PP
+Lire l'item au sommet de la pile\&. 
+.PP
+\fBParam√®tres\fP
+.RS 4
+\fIpile\fP La pile 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+la valeur de l'item au sommet de la pile 
+.RE
+.PP
+\fBPr√©condition\fP
+.RS 4
+la pile n'est pas vide 
+.RE
+.PP
+
+.SH "Auteur"
+.PP 
+G√©n√©r√© automatiquement par Doxygen pour SDA 2019-20 Ruban de M√∂bius √† partir du code source\&.

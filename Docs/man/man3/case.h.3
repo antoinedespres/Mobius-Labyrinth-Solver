@@ -1,0 +1,172 @@
+.TH "C:/PJ_SDA/case.h" 3 "Vendredi 3 Janvier 2020" "Version sp5_03.01.2020" "SDA 2019-20 Ruban de Möbius" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/PJ_SDA/case.h \- Composant case Structures de données et algorithmes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'vecteur3D\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCase\fP"
+.br
+.in -1c
+.SS "Énumérations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBtypeCase\fP { \fBMUR\fP = '#', \fBCHEMIN\fP = '+', \fBDRAGON\fP = 'D', \fBPLAN\fP = 'P' }"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBest_valide\fP (const typeCase tc)"
+.br
+.RI "Renvoie vrai ssi le type de case d'entrée est valide\&. "
+.ti -1c
+.RI "char * \fBstring\fP (const \fBCase\fP &c, bool mecontent=false)"
+.br
+.RI "Convertit une \fBCase\fP en chaîne de caractères\&. "
+.ti -1c
+.RI "\fBCase\fP \fBinitialiser\fP (char c, \fBVec3\fP crd)"
+.br
+.RI "Convertit un char en \fBCase\fP\&. "
+.ti -1c
+.RI "void \fBafficher_crd\fP (const \fBCase\fP &c)"
+.br
+.RI "Affiche les coordonnées d'une \fBCase\fP\&. "
+.in -1c
+.SH "Description détaillée"
+.PP 
+Composant case Structures de données et algorithmes\&. 
+
+Projet DesprésGr109NougaretGr109 
+.PP
+\fBAuteur\fP
+.RS 4
+Antoine Després, Anicet Nougaret 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1 06/01/20 
+.RE
+.PP
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void afficher_crd (const \fBCase\fP & c)"
+
+.PP
+Affiche les coordonnées d'une \fBCase\fP\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIc\fP \fBCase\fP dont on souhaite afficher les coordonnées
+.RE
+.PP
+Affiche les coordonnées d'une \fBCase\fP\&.
+.PP
+\fBParamètres\fP
+.RS 4
+\fIc\fP \fBCase\fP dont on souhaite afficher les coordonn�es 
+.RE
+.PP
+
+.SS "bool est_valide (const typeCase tc)"
+
+.PP
+Renvoie vrai ssi le type de case d'entrée est valide\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fItc\fP Type de case à vérifier
+.RE
+.PP
+Renvoie vrai ssi le type de case d'entrée est valide\&.
+.PP
+\fBParamètres\fP
+.RS 4
+\fItc\fP Type de case � v�rifier 
+.RE
+.PP
+
+.SS "\fBCase\fP initialiser (char c, \fBVec3\fP crd)"
+
+.PP
+Convertit un char en \fBCase\fP\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIc\fP \fBCase\fP à convertir 
+.br
+\fIcrd\fP Coordonnées 3D de la case 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Chaîne de caractères issue de la conversion 
+.RE
+.PP
+\fBPrécondition\fP
+.RS 4
+Le char d'entrée correspond à un type de case valide
+.RE
+.PP
+\fBParamètres\fP
+.RS 4
+\fIc\fP \fBCase\fP � convertir 
+.br
+\fIcrd\fP Coordonn�es 3D de la case 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Cha�ne de caract�res issue de la conversion 
+.RE
+.PP
+\fBPrécondition\fP
+.RS 4
+Le char d'entr�e correspond � un type de case valide 
+.RE
+.PP
+
+.SS "char* string (const \fBCase\fP & c, bool mecontent)"
+
+.PP
+Convertit une \fBCase\fP en chaîne de caractères\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIc\fP \fBCase\fP à convertir 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Chaîne de caractères issue de la conversion
+.RE
+.PP
+Convertit une \fBCase\fP en chaîne de caractères\&.
+.PP
+\fBParamètres\fP
+.RS 4
+\fIc\fP \fBCase\fP � convertir 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Cha�ne de caract�res issue de la conversion 
+.RE
+.PP
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour SDA 2019-20 Ruban de Möbius à partir du code source\&.

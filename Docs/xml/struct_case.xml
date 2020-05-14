@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_case" kind="struct" language="C++" prot="public">
+    <compoundname>Case</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_case_1af00f19f007914e43357703733153ff3a" prot="public" static="no" mutable="no">
+        <type>typeCase</type>
+        <definition>typeCase Case::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.h" line="15" column="10" bodyfile="C:/PJ_SDA/case.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_case_1a78adcebc7f453f027a72689bc3686bc3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Case::crd</definition>
+        <argsstring></argsstring>
+        <name>crd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.h" line="16" column="6" bodyfile="C:/PJ_SDA/case.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_case_1ac2c896cb7975a9abce4f3a3927868951" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Case::visite</definition>
+        <argsstring></argsstring>
+        <name>visite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.h" line="17" column="6" bodyfile="C:/PJ_SDA/case.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_case_1af993e720657af9706b9c50d63c5212a2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Case::dans_chemin</definition>
+        <argsstring></argsstring>
+        <name>dans_chemin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.h" line="18" column="6" bodyfile="C:/PJ_SDA/case.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_case_1a0db792a57c216e9f303e73995e0d572d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Case::ordre</definition>
+        <argsstring></argsstring>
+        <name>ordre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.h" line="19" column="14" bodyfile="C:/PJ_SDA/case.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Vec3</label>
+        <link refid="struct_vec3"/>
+      </node>
+      <node id="1">
+        <label>Case</label>
+        <link refid="struct_case"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>crd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/PJ_SDA/case.h" line="14" column="11" bodyfile="C:/PJ_SDA/case.h" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="struct_case_1a78adcebc7f453f027a72689bc3686bc3" prot="public" virt="non-virtual"><scope>Case</scope><name>crd</name></member>
+      <member refid="struct_case_1af993e720657af9706b9c50d63c5212a2" prot="public" virt="non-virtual"><scope>Case</scope><name>dans_chemin</name></member>
+      <member refid="struct_case_1a0db792a57c216e9f303e73995e0d572d" prot="public" virt="non-virtual"><scope>Case</scope><name>ordre</name></member>
+      <member refid="struct_case_1af00f19f007914e43357703733153ff3a" prot="public" virt="non-virtual"><scope>Case</scope><name>type</name></member>
+      <member refid="struct_case_1ac2c896cb7975a9abce4f3a3927868951" prot="public" virt="non-virtual"><scope>Case</scope><name>visite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

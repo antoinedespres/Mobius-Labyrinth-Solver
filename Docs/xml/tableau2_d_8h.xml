@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="tableau2_d_8h" kind="file" language="C++">
+    <compoundname>tableau2D.h</compoundname>
+    <includes refid="item_8h" local="yes">item.h</includes>
+    <includedby refid="pile_8h" local="yes">C:/PJ_SDA/pile.h</includedby>
+    <includedby refid="tableau2_d_8cpp" local="yes">C:/PJ_SDA/tableau2D.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>C:/PJ_SDA/labyrinthe.cpp</label>
+        <link refid="labyrinthe_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/PJ_SDA/tableau2D.cpp</label>
+        <link refid="tableau2_d_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/PJ_SDA/labyGame.cpp</label>
+        <link refid="laby_game_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/PJ_SDA/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/PJ_SDA/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/PJ_SDA/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/PJ_SDA/labyrinthe.h</label>
+        <link refid="labyrinthe_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/PJ_SDA/labyGame.h</label>
+        <link refid="laby_game_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_tab2" prot="public">Tab2</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tableau2_d_8h_1a0f974639e72da3b04404015ca888573c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initialiser</definition>
+        <argsstring>(int nbL, int nbC, Tab2 &amp;t)</argsstring>
+        <name>initialiser</name>
+        <param>
+          <type>int</type>
+          <declname>nbL</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbC</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Initialise un tableau 2D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nbL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de lignes du tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de colonnes du tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D Ã  initialiser</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de lignes du tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de colonnes du tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à initialiser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="25" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="18" bodyend="34" declfile="C:/PJ_SDA/tableau2D.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8h_1ac59d14ce7a8df3fe5f7a66f208de09ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write</definition>
+        <argsstring>(Item it, int l, int c, Tab2 &amp;t)</argsstring>
+        <name>write</name>
+        <param>
+          <type><ref refid="struct_case" kindref="compound">Item</ref></type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Remplir une case du tableau avec un Item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item Ã  mettre dans la case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NÂ° de ligne de l&apos;emplacement de la case Ã  remplir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NÂ° de colonne de l&apos;emplacement de la case Ã  remplir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D Ã  Ã©crire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>NÂ° de Ligne et de colonne positifs et compris dans le tableau.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item à mettre dans la case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de ligne de l&apos;emplacement de la case à remplir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de colonne de l&apos;emplacement de la case à remplir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à écrire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>N° de Ligne et de colonne positifs et compris dans le tableau. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="35" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="44" bodyend="49" declfile="C:/PJ_SDA/tableau2D.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8h_1a9c29d292cab9217d9265d021710c71b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_case" kindref="compound">Item</ref> *</type>
+        <definition>Item* get</definition>
+        <argsstring>(Tab2 &amp;t, int l, int c)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Obtenir l&apos;Item stockÃ© dans une case du tableau. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D Ã  lire </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NÂ° de ligne de l&apos;emplacement de la case Ã  lire </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NÂ° de colonne de l&apos;emplacement de la case Ã  lire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Item situÃ© dans la case spÃ©cifiÃ©e </para>
+</simplesect>
+<simplesect kind="pre"><para>NÂ° de Ligne et de colonne positifs et compris dans le tableau. </para>
+</simplesect>
+<simplesect kind="pre"><para><ref refid="struct_case" kindref="compound">Case</ref> spÃ©cifiÃ©e non vide</para>
+</simplesect>
+Obtenir l&apos;Item stockÃ© dans une case du tableau.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à lire </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de ligne de l&apos;emplacement de la case à lire </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de colonne de l&apos;emplacement de la case à lire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Item situé dans la case spécifiée </para>
+</simplesect>
+<simplesect kind="pre"><para>N° de Ligne et de colonne positifs et compris dans le tableau. </para>
+</simplesect>
+<simplesect kind="pre"><para><ref refid="struct_case" kindref="compound">Case</ref> spécifiée non vide </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="46" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="60" bodyend="65" declfile="C:/PJ_SDA/tableau2D.h" declline="46" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8h_1aefb6a5993417064f268de6024e4ce164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_case" kindref="compound">Item</ref></type>
+        <definition>const Item read</definition>
+        <argsstring>(const Tab2 &amp;t, int l, int c)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const <ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Lit une case et retourne ses coordonnÃ©es si elle a bien Ã©tÃ© lue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NumÃ©ro de ligne de la case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NumÃ©ro de colonne de la case </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>les coordonnÃ©es de la case </para>
+</simplesect>
+<simplesect kind="pre"><para>NÂ° de ligne et de colonne tous deux supÃ©rieurs Ã  0 </para>
+</simplesect>
+<simplesect kind="pre"><para>la case a Ã©tÃ© marquÃ©e comme used</para>
+</simplesect>
+Lit une case et retourne ses coordonnÃ©es si elle a bien Ã©tÃ© lue.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de ligne de la case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de colonne de la case </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>les coordonnées de la case </para>
+</simplesect>
+<simplesect kind="pre"><para>N° de ligne et de colonne tous deux supérieurs à 0 </para>
+</simplesect>
+<simplesect kind="pre"><para>la case a été marquée comme used </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="57" column="12" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="76" bodyend="81" declfile="C:/PJ_SDA/tableau2D.h" declline="57" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8h_1a0a5e08e91eef285cad9be3ac14cccaa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher</definition>
+        <argsstring>(const Tab2 &amp;t)</argsstring>
+        <name>afficher</name>
+        <param>
+          <type>const <ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Affiche un tableau 2D et son contenu initialisÃ© </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D Ã  afficher</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Affiche un tableau 2D et son contenu initialisÃ©</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à afficher </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="63" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="87" bodyend="101" declfile="C:/PJ_SDA/tableau2D.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8h_1ac4c2c2660fa515f629c26682a4e61b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detruire</definition>
+        <argsstring>(Tab2 &amp;t)</argsstring>
+        <name>detruire</name>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>DÃ©salloue et rend NULL un tableau 2D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in-out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>t Tableau 2D Ã  dÃ©sallouer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+DÃ©salloue et rend NULL un tableau 2D.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in-out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>t Tableau 2D à désallouer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="69" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="107" bodyend="119" declfile="C:/PJ_SDA/tableau2D.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant tableau Ã  2 dimensions Structures de donnÃ©es et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprÃ©sGr109NougaretGr109 <simplesect kind="author"><para>Antoine DesprÃ©s, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="item_8h" kindref="compound">item.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="struct_tab2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_tab2" kindref="compound">Tab2</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_case" kindref="compound">Item</ref>**<sp/>mat;<sp/></highlight><highlight class="comment">//<sp/>Matrice<sp/>2D<sp/>contenant<sp/>les<sp/>Ã©lÃ©ments<sp/>du<sp/>tableau</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">**<sp/>used;<sp/></highlight><highlight class="comment">//<sp/>Matrice<sp/>2D<sp/>indiquant<sp/>quelles<sp/>cases<sp/>de<sp/>la<sp/>matrice<sp/>d&apos;Ã©lÃ©ments<sp/>sont<sp/>occuppÃ©es</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbC;<sp/></highlight><highlight class="comment">//<sp/>Nombre<sp/>de<sp/>colonnes<sp/>de<sp/>la<sp/>matrice<sp/>du<sp/>tableau</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbL;<sp/></highlight><highlight class="comment">//<sp/>Nombre<sp/>de<sp/>ligne<sp/>de<sp/>la<sp/>matrice<sp/>du<sp/>tableau</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8h_1a0f974639e72da3b04404015ca888573c" kindref="member">initialiser</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbL,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbC,<sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8h_1ac59d14ce7a8df3fe5f7a66f208de09ba" kindref="member">write</ref>(<ref refid="struct_case" kindref="compound">Item</ref><sp/>it,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="struct_case" kindref="compound">Item</ref>*<sp/><ref refid="tableau2_d_8h_1a9c29d292cab9217d9265d021710c71b9" kindref="member">get</ref>(<ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Item</ref><sp/><ref refid="tableau2_d_8h_1aefb6a5993417064f268de6024e4ce164" kindref="member">read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8h_1a0a5e08e91eef285cad9be3ac14cccaa4" kindref="member">afficher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8h_1ac4c2c2660fa515f629c26682a4e61b17" kindref="member">detruire</ref>(<ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t);</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/tableau2D.h"/>
+  </compounddef>
+</doxygen>

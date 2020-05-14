@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="labyrinthe_8h" kind="file" language="C++">
+    <compoundname>labyrinthe.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes refid="pile_8h" local="yes">pile.h</includes>
+    <includedby refid="laby_game_8h" local="yes">C:/PJ_SDA/labyGame.h</includedby>
+    <includedby refid="labyrinthe_8cpp" local="yes">C:/PJ_SDA/labyrinthe.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cassert</label>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/labyrinthe.h</label>
+        <link refid="labyrinthe_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>C:/PJ_SDA/labyrinthe.cpp</label>
+        <link refid="labyrinthe_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/PJ_SDA/labyGame.cpp</label>
+        <link refid="laby_game_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/PJ_SDA/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/labyrinthe.h</label>
+        <link refid="labyrinthe_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/PJ_SDA/labyGame.h</label>
+        <link refid="laby_game_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_laby" prot="public">Laby</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="labyrinthe_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="labyrinthe_8h_1a06fc87d81c62e9abb8790b6e5713c55bad9318cb7ff725ec89efc9d1c8a309ba3" prot="public">
+          <name>NBDEPL</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="labyrinthe_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6c8e5f290be4be86fd5e7048654b4a50" prot="public">
+          <name>DIM</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="13" column="6" bodyfile="C:/PJ_SDA/labyrinthe.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="labyrinthe_8h_1a1cedd874e7b860b10eae44cba30f3a88" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DEPL[NBDEPL][DIM]</definition>
+        <argsstring>[NBDEPL][DIM]</argsstring>
+        <name>DEPL</name>
+        <initializer>= {
+	{-1,0,0},{-1,1,0},{0,1,0},{1,1,0},{1,0,0},{1,-1,0},{0,-1,0},{-1,-1,0}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="15" column="11" bodyfile="C:/PJ_SDA/labyrinthe.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="labyrinthe_8h_1a01c1137f006923127d77b9c7286c0eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initialiser</definition>
+        <argsstring>(char *path, Laby &amp;laby)</argsstring>
+        <name>initialiser</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Lit un fichier .txt pour initialiser le labyrinthe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chemin du fichier .txt qui décrit le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Labyrinthe à initialiser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="30" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="18" bodyend="46" declfile="C:/PJ_SDA/labyrinthe.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1ae10daeec525899ab9f730fa110ab5a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher</definition>
+        <argsstring>(const Laby &amp;laby, bool mecontent=false)</argsstring>
+        <name>afficher</name>
+        <param>
+          <type>const <ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mecontent</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Affiche un labyrinthe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Labyrinthe à afficher </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mecontent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Affiche le mécontentement du dragon si true (false si non renseigné) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="37" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="53" bodyend="69" declfile="C:/PJ_SDA/labyrinthe.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1a325501041b11efdd99b9cb51ffd47bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detruire</definition>
+        <argsstring>(Laby &amp;laby)</argsstring>
+        <name>detruire</name>
+        <param>
+          <type><ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Désalloue les tableaux représentant les faces d&apos;un labyrinthe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Labyrinthe à détruire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="43" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="75" bodyend="79" declfile="C:/PJ_SDA/labyrinthe.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1af73781b0c230c862b8086f44c671f896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_case" kindref="compound">Case</ref> *</type>
+        <definition>Case* get_case</definition>
+        <argsstring>(const Vec3 &amp;crd, Laby &amp;laby)</argsstring>
+        <name>get_case</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>crd</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Trouver une case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnées d&apos;une case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="51" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="87" bodyend="90" declfile="C:/PJ_SDA/labyrinthe.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1ab20235b70edf353ea87b6220f380e005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_case" kindref="compound">Case</ref></type>
+        <definition>Case read_case</definition>
+        <argsstring>(const Vec3 &amp;crd, const Laby &amp;laby)</argsstring>
+        <name>read_case</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>crd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Lire une case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnées d&apos;une case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="59" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="98" bodyend="102" declfile="C:/PJ_SDA/labyrinthe.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1a7b5f74fc1bbb1d6d4589e577b0070c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool est_case</definition>
+        <argsstring>(const Vec3 &amp;crd, const Laby &amp;laby)</argsstring>
+        <name>est_case</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>crd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Test d&apos;existence d&apos;une case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnées d&apos;une case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false ou true selon l&apos;existence ou non de la case </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="67" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="110" bodyend="117" declfile="C:/PJ_SDA/labyrinthe.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1a15961b601cfe8ab3976c9be01789bbef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 translation_moebius</definition>
+        <argsstring>(const Vec3 &amp;v1, const Vec3 &amp;v2, const Laby &amp;laby)</argsstring>
+        <name>translation_moebius</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v1</declname>
+          <defname>depart</defname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v2</declname>
+          <defname>translation</defname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Translation vectorielle selon les contraintes d&apos;un ruban de Moebius (inversions en Y aux bordures etc...) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Loordonnées de départ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>translation Translation à réaliser </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nouv Le nouveau vecteur issu de la translation </para>
+</simplesect>
+<simplesect kind="pre"><para>Le nombre de lignes d&apos;une face est supérieur à nouv.y</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnées de départ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>translation Translation à réaliser </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nouv Le nouveau vecteur issu de la translation </para>
+</simplesect>
+<simplesect kind="pre"><para>Le nombre de lignes d&apos;une face est supérieur à nouv.y </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="77" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="127" bodyend="156" declfile="C:/PJ_SDA/labyrinthe.h" declline="77" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1a1f927ca31fbfc97126ebcda0113f9768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 crd_face_unique</definition>
+        <argsstring>(const Vec3 &amp;crd, const Laby &amp;laby)</argsstring>
+        <name>crd_face_unique</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>crd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Vérifie si une case est à visiter ou non. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Première case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arrivee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deuxième case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true ou false selon que la case soit à visiter ou non</para>
+</simplesect>
+Rapporte les coordonnées à un labyrinthe d&apos;une seule face <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La coordonnée d&apos;entrée </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nouvelle coordonnée</para>
+</simplesect>
+Vérifie si une case est à visiter ou non.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La coordonnée d&apos;entrée </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nouvelle coordonnée </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="93" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="164" bodyend="179" declfile="C:/PJ_SDA/labyrinthe.h" declline="93" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1a800b6334aa2f3fc21ee47c2f6161f0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool est_a_visiter</definition>
+        <argsstring>(const Vec3 &amp;c1, const Vec3 &amp;c2, const Laby &amp;laby)</argsstring>
+        <name>est_a_visiter</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>c1</declname>
+          <defname>depart</defname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>c2</declname>
+          <defname>arrivee</defname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Vérifie si une case est à visiter ou non. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Première case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arrivee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deuxième case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true ou false selon que la case soit à visiter ou non </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="102" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="188" bodyend="198" declfile="C:/PJ_SDA/labyrinthe.h" declline="102" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="labyrinthe_8h_1ab2f6f53e3989cc85f0cd055c769fa464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool est_connexe</definition>
+        <argsstring>(const Vec3 &amp;c1, const Vec3 &amp;c2, const Laby &amp;laby)</argsstring>
+        <name>est_connexe</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>c1</declname>
+          <defname>depart</defname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>c2</declname>
+          <defname>arrivee</defname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Vérifie si une case est connexe à une autre (si on peut passer de l&apos;une à l&apos;autre) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Première case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arrivee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deuxième case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true ou false selon que les deux cases soient connexes ou non </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyrinthe.h" line="111" column="6" bodyfile="C:/PJ_SDA/labyrinthe.cpp" bodystart="207" bodyend="226" declfile="C:/PJ_SDA/labyrinthe.h" declline="111" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant labyrinthe Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pile_8h" kindref="compound">pile.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/>NBDEPL<sp/>=<sp/>8,<sp/>DIM<sp/>=<sp/>3<sp/>};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DEPL[NBDEPL][DIM]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{-1,0,0},{-1,1,0},{0,1,0},{1,1,0},{1,0,0},{1,-1,0},{0,-1,0},{-1,-1,0}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>Déplacements<sp/>possibles<sp/>pour<sp/>le<sp/>dragon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="struct_laby" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_laby" kindref="compound">Laby</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{NBFACE<sp/>=<sp/>2};<sp/></highlight><highlight class="comment">//<sp/>Nombre<sp/>de<sp/>faces<sp/>du<sp/>labyrinthe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref><sp/>faces[NBFACE];<sp/></highlight><highlight class="comment">//<sp/>Tableaux<sp/>2D<sp/>des<sp/>faces<sp/>du<sp/>labyrinthe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/>crd_dragon;<sp/></highlight><highlight class="comment">//<sp/>Coordonnées<sp/>de<sp/>la<sp/>case<sp/>DRAGON<sp/>dans<sp/>le<sp/>labyrinthe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="labyrinthe_8h_1a01c1137f006923127d77b9c7286c0eb6" kindref="member">initialiser</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path,<sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="labyrinthe_8h_1ae10daeec525899ab9f730fa110ab5a8a" kindref="member">afficher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mecontent<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="labyrinthe_8h_1a325501041b11efdd99b9cb51ffd47bbc" kindref="member">detruire</ref>(<ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="struct_case" kindref="compound">Case</ref>*<sp/><ref refid="labyrinthe_8h_1af73781b0c230c862b8086f44c671f896" kindref="member">get_case</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>crd,<sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="struct_case" kindref="compound">Case</ref><sp/><ref refid="labyrinthe_8h_1ab20235b70edf353ea87b6220f380e005" kindref="member">read_case</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>crd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="labyrinthe_8h_1a7b5f74fc1bbb1d6d4589e577b0070c5a" kindref="member">est_case</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>crd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/><ref refid="labyrinthe_8h_1a15961b601cfe8ab3976c9be01789bbef" kindref="member">translation_moebius</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>v2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/><ref refid="labyrinthe_8h_1a1f927ca31fbfc97126ebcda0113f9768" kindref="member">crd_face_unique</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>crd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="labyrinthe_8h_1a800b6334aa2f3fc21ee47c2f6161f0cd" kindref="member">est_a_visiter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>c1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>c2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="labyrinthe_8h_1ab2f6f53e3989cc85f0cd055c769fa464" kindref="member">est_connexe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>c1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>c2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/labyrinthe.h"/>
+  </compounddef>
+</doxygen>

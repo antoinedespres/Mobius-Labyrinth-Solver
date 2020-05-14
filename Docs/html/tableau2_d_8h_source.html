@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SDA 2019-20 Ruban de Möbius:  Fichier source de C:/PJ_SDA/tableau2D.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SDA 2019-20 Ruban de Möbius
+   &#160;<span id="projectnumber">sp5_03.01.2020</span>
+   </div>
+   <div id="projectbrief">Pathfinding dans un labyrinthe sur un ruban de Möbius</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/PJ_SDA/tableau2D.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tableau2_d_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="item_8h.html">item.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_tab2.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_tab2.html">Tab2</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="struct_case.html">Item</a>** mat; <span class="comment">// Matrice 2D contenant les éléments du tableau</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span>** used; <span class="comment">// Matrice 2D indiquant quelles cases de la matrice d&#39;éléments sont occuppées</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> nbC; <span class="comment">// Nombre de colonnes de la matrice du tableau</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> nbL; <span class="comment">// Nombre de ligne de la matrice du tableau</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tableau2_d_8h.html#a0f974639e72da3b04404015ca888573c">initialiser</a>(<span class="keywordtype">int</span> nbL, <span class="keywordtype">int</span> nbC, <a class="code" href="struct_tab2.html">Tab2</a>&amp; t);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tableau2_d_8h.html#ac59d14ce7a8df3fe5f7a66f208de09ba">write</a>(<a class="code" href="struct_case.html">Item</a> it, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> c, <a class="code" href="struct_tab2.html">Tab2</a>&amp; t);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="struct_case.html">Item</a>* <a class="code" href="tableau2_d_8h.html#a9c29d292cab9217d9265d021710c71b9">get</a>(<a class="code" href="struct_tab2.html">Tab2</a>&amp; t, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">const</span> <a class="code" href="struct_case.html">Item</a> <a class="code" href="tableau2_d_8h.html#aefb6a5993417064f268de6024e4ce164">read</a>(<span class="keyword">const</span> <a class="code" href="struct_tab2.html">Tab2</a>&amp; t, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tableau2_d_8h.html#a0a5e08e91eef285cad9be3ac14cccaa4">afficher</a>(<span class="keyword">const</span> <a class="code" href="struct_tab2.html">Tab2</a>&amp; t);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tableau2_d_8h.html#ac4c2c2660fa515f629c26682a4e61b17">detruire</a>(<a class="code" href="struct_tab2.html">Tab2</a>&amp; t);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="atableau2_d_8h_html_a9c29d292cab9217d9265d021710c71b9"><div class="ttname"><a href="tableau2_d_8h.html#a9c29d292cab9217d9265d021710c71b9">get</a></div><div class="ttdeci">Item * get(Tab2 &amp;t, int l, int c)</div><div class="ttdoc">Obtenir l'Item stocké dans une case du tableau.</div><div class="ttdef"><b>Definition:</b> tableau2D.cpp:60</div></div>
+<div class="ttc" id="atableau2_d_8h_html_ac4c2c2660fa515f629c26682a4e61b17"><div class="ttname"><a href="tableau2_d_8h.html#ac4c2c2660fa515f629c26682a4e61b17">detruire</a></div><div class="ttdeci">void detruire(Tab2 &amp;t)</div><div class="ttdoc">Désalloue et rend NULL un tableau 2D.</div><div class="ttdef"><b>Definition:</b> tableau2D.cpp:107</div></div>
+<div class="ttc" id="atableau2_d_8h_html_aefb6a5993417064f268de6024e4ce164"><div class="ttname"><a href="tableau2_d_8h.html#aefb6a5993417064f268de6024e4ce164">read</a></div><div class="ttdeci">const Item read(const Tab2 &amp;t, int l, int c)</div><div class="ttdoc">Lit une case et retourne ses coordonnées si elle a bien été lue.</div><div class="ttdef"><b>Definition:</b> tableau2D.cpp:76</div></div>
+<div class="ttc" id="atableau2_d_8h_html_a0a5e08e91eef285cad9be3ac14cccaa4"><div class="ttname"><a href="tableau2_d_8h.html#a0a5e08e91eef285cad9be3ac14cccaa4">afficher</a></div><div class="ttdeci">void afficher(const Tab2 &amp;t)</div><div class="ttdoc">Affiche un tableau 2D et son contenu initialisé</div><div class="ttdef"><b>Definition:</b> tableau2D.cpp:87</div></div>
+<div class="ttc" id="astruct_tab2_html"><div class="ttname"><a href="struct_tab2.html">Tab2</a></div><div class="ttdef"><b>Definition:</b> tableau2D.h:12</div></div>
+<div class="ttc" id="astruct_case_html"><div class="ttname"><a href="struct_case.html">Case</a></div><div class="ttdef"><b>Definition:</b> case.h:14</div></div>
+<div class="ttc" id="atableau2_d_8h_html_a0f974639e72da3b04404015ca888573c"><div class="ttname"><a href="tableau2_d_8h.html#a0f974639e72da3b04404015ca888573c">initialiser</a></div><div class="ttdeci">void initialiser(int nbL, int nbC, Tab2 &amp;t)</div><div class="ttdoc">Initialise un tableau 2D.</div><div class="ttdef"><b>Definition:</b> tableau2D.cpp:18</div></div>
+<div class="ttc" id="atableau2_d_8h_html_ac59d14ce7a8df3fe5f7a66f208de09ba"><div class="ttname"><a href="tableau2_d_8h.html#ac59d14ce7a8df3fe5f7a66f208de09ba">write</a></div><div class="ttdeci">void write(Item it, int l, int c, Tab2 &amp;t)</div><div class="ttdoc">Remplir une case du tableau avec un Item.</div><div class="ttdef"><b>Definition:</b> tableau2D.cpp:44</div></div>
+<div class="ttc" id="aitem_8h_html"><div class="ttname"><a href="item_8h.html">item.h</a></div><div class="ttdoc">Composant Item Structures de données et algorithmes.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

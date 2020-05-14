@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SDA 2019-20 Ruban de Möbius:  Fichier source de C:/PJ_SDA/pile.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SDA 2019-20 Ruban de Möbius
+   &#160;<span id="projectnumber">sp5_03.01.2020</span>
+   </div>
+   <div id="projectbrief">Pathfinding dans un labyrinthe sur un ruban de Möbius</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/PJ_SDA/pile.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pile_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tableau2_d_8h.html">tableau2D.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_pile.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_pile.html">Pile</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="struct_vec3.html">Vec3</a>* tab; <span class="comment">// Liste contenant les éléments de la pile</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbEl; <span class="comment">// Nombre d&#39;éléments dans la pile</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pas; <span class="comment">// Pas d&#39;extension de la pile</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cap; <span class="comment">// Capacité de la pile</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pile_8h.html#a0f64868948f4ec25e25b900d78dc5b03">initialiser</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p, <a class="code" href="struct_pile.html">Pile</a>&amp; pile);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pile_8h.html#acb921a706453e114e6dc663b4a5324d9">empiler</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; it, <a class="code" href="struct_pile.html">Pile</a>&amp; pile);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pile_8h.html#a8b3b37884e20c6815951bc9408a5ee38">depiler</a>(<a class="code" href="struct_pile.html">Pile</a>&amp; pile);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="struct_vec3.html">Vec3</a> <a class="code" href="pile_8h.html#ad9035b858b225127210378e9c5234861">sommet</a>(<span class="keyword">const</span> <a class="code" href="struct_pile.html">Pile</a>&amp; pile);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pile_8h.html#a2768c7cefd56136f83840228e374470b">detruire</a>(<a class="code" href="struct_pile.html">Pile</a>&amp; pile);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="pile_8h.html#ae27db206e4e078b9ed06fab11258c867">est_vide</a>(<span class="keyword">const</span> <a class="code" href="struct_pile.html">Pile</a>&amp; pile);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pile_8h.html#ac8874fd7dfed5ba5bee5b9209157f39c">afficher</a>(<span class="keyword">const</span> <a class="code" href="struct_pile.html">Pile</a>&amp; pile);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="apile_8h_html_ad9035b858b225127210378e9c5234861"><div class="ttname"><a href="pile_8h.html#ad9035b858b225127210378e9c5234861">sommet</a></div><div class="ttdeci">Vec3 sommet(const Pile &amp;pile)</div><div class="ttdoc">Lire l'item au sommet de la pile.</div><div class="ttdef"><b>Definition:</b> pile.cpp:63</div></div>
+<div class="ttc" id="apile_8h_html_a0f64868948f4ec25e25b900d78dc5b03"><div class="ttname"><a href="pile_8h.html#a0f64868948f4ec25e25b900d78dc5b03">initialiser</a></div><div class="ttdeci">void initialiser(unsigned int n, unsigned int p, Pile &amp;pile)</div><div class="ttdoc">Initialiser une pile vide la pile est allouée en mémoire dynamique.</div><div class="ttdef"><b>Definition:</b> pile.cpp:21</div></div>
+<div class="ttc" id="astruct_vec3_html"><div class="ttname"><a href="struct_vec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> vecteur3D.h:13</div></div>
+<div class="ttc" id="apile_8h_html_ae27db206e4e078b9ed06fab11258c867"><div class="ttname"><a href="pile_8h.html#ae27db206e4e078b9ed06fab11258c867">est_vide</a></div><div class="ttdeci">bool est_vide(const Pile &amp;pile)</div><div class="ttdoc">Test de pile vide.</div><div class="ttdef"><b>Definition:</b> pile.cpp:86</div></div>
+<div class="ttc" id="apile_8h_html_ac8874fd7dfed5ba5bee5b9209157f39c"><div class="ttname"><a href="pile_8h.html#ac8874fd7dfed5ba5bee5b9209157f39c">afficher</a></div><div class="ttdeci">void afficher(const Pile &amp;pile)</div><div class="ttdoc">Affichage des coordonnées du chemin selon la mise en forme prévue.</div><div class="ttdef"><b>Definition:</b> pile.cpp:94</div></div>
+<div class="ttc" id="astruct_pile_html"><div class="ttname"><a href="struct_pile.html">Pile</a></div><div class="ttdef"><b>Definition:</b> pile.h:12</div></div>
+<div class="ttc" id="apile_8h_html_a8b3b37884e20c6815951bc9408a5ee38"><div class="ttname"><a href="pile_8h.html#a8b3b37884e20c6815951bc9408a5ee38">depiler</a></div><div class="ttdeci">void depiler(Pile &amp;pile)</div><div class="ttdoc">Dépiler l'item au sommet de pile.</div><div class="ttdef"><b>Definition:</b> pile.cpp:52</div></div>
+<div class="ttc" id="apile_8h_html_a2768c7cefd56136f83840228e374470b"><div class="ttname"><a href="pile_8h.html#a2768c7cefd56136f83840228e374470b">detruire</a></div><div class="ttdeci">void detruire(Pile &amp;pile)</div><div class="ttdoc">Désallouer une pile.</div><div class="ttdef"><b>Definition:</b> pile.cpp:73</div></div>
+<div class="ttc" id="atableau2_d_8h_html"><div class="ttname"><a href="tableau2_d_8h.html">tableau2D.h</a></div><div class="ttdoc">Composant tableau à 2 dimensions Structures de données et algorithmes.</div></div>
+<div class="ttc" id="apile_8h_html_acb921a706453e114e6dc663b4a5324d9"><div class="ttname"><a href="pile_8h.html#acb921a706453e114e6dc663b4a5324d9">empiler</a></div><div class="ttdeci">void empiler(const Vec3 &amp;it, Pile &amp;pile)</div><div class="ttdoc">Empiler un item sur une pile.</div><div class="ttdef"><b>Definition:</b> pile.cpp:33</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

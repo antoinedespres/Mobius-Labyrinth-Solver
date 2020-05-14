@@ -1,0 +1,175 @@
+.TH "C:/PJ_SDA/tableau2D.cpp" 3 "Vendredi 3 Janvier 2020" "Version sp5_03.01.2020" "SDA 2019-20 Ruban de MÃ¶bius" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/PJ_SDA/tableau2D.cpp \- Composant tableau à 2 dimensions Structures de données et algorithmes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'tableau2D\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitialiser\fP (int nbL, int nbC, \fBTab2\fP &t)"
+.br
+.RI "Initialise un tableau 2D\&. "
+.ti -1c
+.RI "void \fBwrite\fP (\fBItem\fP it, int l, int c, \fBTab2\fP &t)"
+.br
+.RI "Remplir une case du tableau avec un Item\&. "
+.ti -1c
+.RI "\fBItem\fP * \fBget\fP (\fBTab2\fP &t, int l, int c)"
+.br
+.RI "Obtenir l'Item stocké dans une case du tableau\&. "
+.ti -1c
+.RI "const \fBItem\fP \fBread\fP (const \fBTab2\fP &t, int l, int c)"
+.br
+.RI "Lit une case et retourne ses coordonnées si elle a bien été lue\&. "
+.ti -1c
+.RI "void \fBafficher\fP (const \fBTab2\fP &t)"
+.br
+.RI "Affiche un tableau 2D et son contenu initialisé "
+.ti -1c
+.RI "void \fBdetruire\fP (\fBTab2\fP &t)"
+.br
+.RI "Désalloue et rend NULL un tableau 2D\&. "
+.in -1c
+.SH "Description dÃ©taillÃ©e"
+.PP 
+Composant tableau à 2 dimensions Structures de données et algorithmes\&. 
+
+Projet DesprésGr109NougaretGr109 
+.PP
+\fBAuteur\fP
+.RS 4
+Antoine Després, Anicet Nougaret 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1 06/01/20 
+.RE
+.PP
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void afficher (const \fBTab2\fP & t)"
+
+.PP
+Affiche un tableau 2D et son contenu initialisé Affiche un tableau 2D et son contenu initialisÃ©
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fIt\fP Tableau 2D à afficher 
+.RE
+.PP
+
+.SS "void detruire (\fBTab2\fP & t)"
+
+.PP
+Désalloue et rend NULL un tableau 2D\&. DÃ©salloue et rend NULL un tableau 2D\&.
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fI[in-out]\fP t Tableau 2D à désallouer 
+.RE
+.PP
+
+.SS "\fBItem\fP* get (\fBTab2\fP & t, int l, int c)"
+
+.PP
+Obtenir l'Item stocké dans une case du tableau\&. Obtenir l'Item stockÃ© dans une case du tableau\&.
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fIt\fP Tableau 2D à lire 
+.br
+\fIl\fP N° de ligne de l'emplacement de la case à lire 
+.br
+\fIc\fP N° de colonne de l'emplacement de la case à lire 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Item situé dans la case spécifiée 
+.RE
+.PP
+\fBPrÃ©condition\fP
+.RS 4
+N° de Ligne et de colonne positifs et compris dans le tableau\&. 
+.PP
+\fBCase\fP spécifiée non vide 
+.RE
+.PP
+
+.SS "void initialiser (int nbL, int nbC, \fBTab2\fP & t)"
+
+.PP
+Initialise un tableau 2D\&. 
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fInbL\fP Nombre de lignes du tableau 
+.br
+\fInbC\fP Nombre de colonnes du tableau 
+.br
+\fIt\fP Tableau 2D à initialiser 
+.RE
+.PP
+
+.SS "const \fBItem\fP read (const \fBTab2\fP & t, int l, int c)"
+
+.PP
+Lit une case et retourne ses coordonnées si elle a bien été lue\&. Lit une case et retourne ses coordonnÃ©es si elle a bien Ã©tÃ© lue\&.
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fIt\fP Le tableau 
+.br
+\fIl\fP Numéro de ligne de la case 
+.br
+\fIc\fP Numéro de colonne de la case 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+les coordonnées de la case 
+.RE
+.PP
+\fBPrÃ©condition\fP
+.RS 4
+N° de ligne et de colonne tous deux supérieurs à 0 
+.PP
+la case a été marquée comme used 
+.RE
+.PP
+
+.SS "void write (\fBItem\fP it, int l, int c, \fBTab2\fP & t)"
+
+.PP
+Remplir une case du tableau avec un Item\&. 
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fIit\fP Item à mettre dans la case 
+.br
+\fIl\fP N° de ligne de l'emplacement de la case à remplir 
+.br
+\fIc\fP N° de colonne de l'emplacement de la case à remplir 
+.br
+\fIt\fP Tableau 2D à écrire 
+.RE
+.PP
+\fBPrÃ©condition\fP
+.RS 4
+N° de Ligne et de colonne positifs et compris dans le tableau\&. 
+.RE
+.PP
+
+.SH "Auteur"
+.PP 
+GÃ©nÃ©rÃ© automatiquement par Doxygen pour SDA 2019-20 Ruban de MÃ¶bius Ã  partir du code source\&.

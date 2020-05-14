@@ -1,0 +1,241 @@
+\hypertarget{tableau2_d_8h}{}\doxysection{Référence du fichier C\+:/\+P\+J\+\_\+\+S\+D\+A/tableau2D.h}
+\label{tableau2_d_8h}\index{C:/PJ\_SDA/tableau2D.h@{C:/PJ\_SDA/tableau2D.h}}
+
+
+Composant tableau à 2 dimensions Structures de données et algorithmes.  
+
+
+{\ttfamily \#include \char`\"{}item.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_tab2}{Tab2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tableau2_d_8h_a0f974639e72da3b04404015ca888573c}{initialiser}} (int nbL, int nbC, \mbox{\hyperlink{struct_tab2}{Tab2}} \&t)
+\begin{DoxyCompactList}\small\item\em Initialise un tableau 2D. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableau2_d_8h_ac59d14ce7a8df3fe5f7a66f208de09ba}{write}} (\mbox{\hyperlink{struct_case}{Item}} it, int l, int c, \mbox{\hyperlink{struct_tab2}{Tab2}} \&t)
+\begin{DoxyCompactList}\small\item\em Remplir une case du tableau avec un Item. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_case}{Item}} $\ast$ \mbox{\hyperlink{tableau2_d_8h_a9c29d292cab9217d9265d021710c71b9}{get}} (\mbox{\hyperlink{struct_tab2}{Tab2}} \&t, int l, int c)
+\begin{DoxyCompactList}\small\item\em Obtenir l\textquotesingle{}Item stocké dans une case du tableau. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_case}{Item}} \mbox{\hyperlink{tableau2_d_8h_aefb6a5993417064f268de6024e4ce164}{read}} (const \mbox{\hyperlink{struct_tab2}{Tab2}} \&t, int l, int c)
+\begin{DoxyCompactList}\small\item\em Lit une case et retourne ses coordonnées si elle a bien été lue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableau2_d_8h_a0a5e08e91eef285cad9be3ac14cccaa4}{afficher}} (const \mbox{\hyperlink{struct_tab2}{Tab2}} \&t)
+\begin{DoxyCompactList}\small\item\em Affiche un tableau 2D et son contenu initialisé \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableau2_d_8h_ac4c2c2660fa515f629c26682a4e61b17}{detruire}} (\mbox{\hyperlink{struct_tab2}{Tab2}} \&t)
+\begin{DoxyCompactList}\small\item\em Désalloue et rend N\+U\+LL un tableau 2D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Composant tableau à 2 dimensions Structures de données et algorithmes. 
+
+Projet Després\+Gr109\+Nougaret\+Gr109 \begin{DoxyAuthor}{Auteur}
+Antoine Després, Anicet Nougaret 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 06/01/20 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{tableau2_d_8h_a0a5e08e91eef285cad9be3ac14cccaa4}\label{tableau2_d_8h_a0a5e08e91eef285cad9be3ac14cccaa4}} 
+\index{tableau2D.h@{tableau2D.h}!afficher@{afficher}}
+\index{afficher@{afficher}!tableau2D.h@{tableau2D.h}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_tab2}{Tab2}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Affiche un tableau 2D et son contenu initialisé 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em t} & Tableau 2D à afficher\\
+\hline
+\end{DoxyParams}
+Affiche un tableau 2D et son contenu initialisé
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em t} & Tableau 2D � afficher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableau2_d_8h_ac4c2c2660fa515f629c26682a4e61b17}\label{tableau2_d_8h_ac4c2c2660fa515f629c26682a4e61b17}} 
+\index{tableau2D.h@{tableau2D.h}!detruire@{detruire}}
+\index{detruire@{detruire}!tableau2D.h@{tableau2D.h}}
+\doxysubsubsection{\texorpdfstring{detruire()}{detruire()}}
+{\footnotesize\ttfamily void detruire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tab2}{Tab2}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Désalloue et rend N\+U\+LL un tableau 2D. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{[}in-\/out\mbox{]}} & t Tableau 2D à désallouer\\
+\hline
+\end{DoxyParams}
+Désalloue et rend N\+U\+LL un tableau 2D.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{[}in-\/out\mbox{]}} & t Tableau 2D � d�sallouer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableau2_d_8h_a9c29d292cab9217d9265d021710c71b9}\label{tableau2_d_8h_a9c29d292cab9217d9265d021710c71b9}} 
+\index{tableau2D.h@{tableau2D.h}!get@{get}}
+\index{get@{get}!tableau2D.h@{tableau2D.h}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_case}{Item}}$\ast$ get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tab2}{Tab2}} \&}]{t,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Obtenir l\textquotesingle{}Item stocké dans une case du tableau. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em t} & Tableau 2D à lire \\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & N° de ligne de l\textquotesingle{}emplacement de la case à lire \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & N° de colonne de l\textquotesingle{}emplacement de la case à lire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Item situé dans la case spécifiée 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+N° de Ligne et de colonne positifs et compris dans le tableau. 
+
+\mbox{\hyperlink{struct_case}{Case}} spécifiée non vide
+\end{DoxyPrecond}
+Obtenir l\textquotesingle{}Item stocké dans une case du tableau.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em t} & Tableau 2D � lire \\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & N� de ligne de l\textquotesingle{}emplacement de la case � lire \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & N� de colonne de l\textquotesingle{}emplacement de la case � lire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Item situ� dans la case sp�cifi�e 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+N� de Ligne et de colonne positifs et compris dans le tableau. 
+
+\mbox{\hyperlink{struct_case}{Case}} sp�cifi�e non vide 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{tableau2_d_8h_a0f974639e72da3b04404015ca888573c}\label{tableau2_d_8h_a0f974639e72da3b04404015ca888573c}} 
+\index{tableau2D.h@{tableau2D.h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!tableau2D.h@{tableau2D.h}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{int}]{nbL,  }\item[{int}]{nbC,  }\item[{\mbox{\hyperlink{struct_tab2}{Tab2}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Initialise un tableau 2D. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em nbL} & Nombre de lignes du tableau \\
+\hline
+\mbox{\texttt{ in}}  & {\em nbC} & Nombre de colonnes du tableau \\
+\hline
+\mbox{\texttt{ out}}  & {\em t} & Tableau 2D à initialiser\\
+\hline
+\mbox{\texttt{ in}}  & {\em nbL} & Nombre de lignes du tableau \\
+\hline
+\mbox{\texttt{ in}}  & {\em nbC} & Nombre de colonnes du tableau \\
+\hline
+\mbox{\texttt{ out}}  & {\em t} & Tableau 2D � initialiser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableau2_d_8h_aefb6a5993417064f268de6024e4ce164}\label{tableau2_d_8h_aefb6a5993417064f268de6024e4ce164}} 
+\index{tableau2D.h@{tableau2D.h}!read@{read}}
+\index{read@{read}!tableau2D.h@{tableau2D.h}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_case}{Item}} read (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_tab2}{Tab2}} \&}]{t,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Lit une case et retourne ses coordonnées si elle a bien été lue. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em t} & Le tableau \\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & Numéro de ligne de la case \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Numéro de colonne de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+les coordonnées de la case 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+N° de ligne et de colonne tous deux supérieurs à 0 
+
+la case a été marquée comme used
+\end{DoxyPrecond}
+Lit une case et retourne ses coordonnées si elle a bien été lue.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em t} & Le tableau \\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & Num�ro de ligne de la case \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Num�ro de colonne de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+les coordonn�es de la case 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+N� de ligne et de colonne tous deux sup�rieurs � 0 
+
+la case a �t� marqu�e comme used 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{tableau2_d_8h_ac59d14ce7a8df3fe5f7a66f208de09ba}\label{tableau2_d_8h_ac59d14ce7a8df3fe5f7a66f208de09ba}} 
+\index{tableau2D.h@{tableau2D.h}!write@{write}}
+\index{write@{write}!tableau2D.h@{tableau2D.h}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_case}{Item}}}]{it,  }\item[{int}]{l,  }\item[{int}]{c,  }\item[{\mbox{\hyperlink{struct_tab2}{Tab2}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Remplir une case du tableau avec un Item. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em it} & Item à mettre dans la case \\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & N° de ligne de l\textquotesingle{}emplacement de la case à remplir \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & N° de colonne de l\textquotesingle{}emplacement de la case à remplir \\
+\hline
+\mbox{\texttt{ out}}  & {\em t} & Tableau 2D à écrire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Précondition}
+N° de Ligne et de colonne positifs et compris dans le tableau.
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em it} & Item � mettre dans la case \\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & N� de ligne de l\textquotesingle{}emplacement de la case � remplir \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & N� de colonne de l\textquotesingle{}emplacement de la case � remplir \\
+\hline
+\mbox{\texttt{ out}}  & {\em t} & Tableau 2D � �crire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Précondition}
+N� de Ligne et de colonne positifs et compris dans le tableau. 
+\end{DoxyPrecond}

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="item_8h" kind="file" language="C++">
+    <compoundname>item.h</compoundname>
+    <includes refid="case_8h" local="yes">case.h</includes>
+    <includedby refid="item_8cpp" local="yes">C:/PJ_SDA/item.cpp</includedby>
+    <includedby refid="tableau2_d_8h" local="yes">C:/PJ_SDA/tableau2D.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cassert</label>
+      </node>
+      <node id="3">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>C:/PJ_SDA/labyrinthe.cpp</label>
+        <link refid="labyrinthe_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/PJ_SDA/tableau2D.cpp</label>
+        <link refid="tableau2_d_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/PJ_SDA/labyGame.cpp</label>
+        <link refid="laby_game_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/PJ_SDA/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/PJ_SDA/tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/PJ_SDA/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/PJ_SDA/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/PJ_SDA/labyrinthe.h</label>
+        <link refid="labyrinthe_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/PJ_SDA/labyGame.h</label>
+        <link refid="laby_game_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/PJ_SDA/item.cpp</label>
+        <link refid="item_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="item_8h_1a68ed140e2f36d70de53243b8ca74836f" prot="public" static="no">
+        <type><ref refid="struct_case" kindref="compound">Case</ref></type>
+        <definition>typedef Case Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/item.h" line="12" column="14" bodyfile="C:/PJ_SDA/item.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="item_8h_1a1adc0a2d8a310166ef1696c4badaa0ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher</definition>
+        <argsstring>(const Item &amp;it)</argsstring>
+        <name>afficher</name>
+        <param>
+          <type>const <ref refid="struct_case" kindref="compound">Item</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Affiche la version chaîne de caractères d&apos;un item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item à afficher </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Il existe une fonction string permettant de convertir le type représenté par un Item en chaîne de caractères. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/item.h" line="20" column="6" bodyfile="C:/PJ_SDA/item.cpp" bodystart="18" bodyend="23" declfile="C:/PJ_SDA/item.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant Item Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="case_8h" kindref="compound">case.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Case</ref><sp/><ref refid="struct_case" kindref="compound">Item</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="item_8h_1a1adc0a2d8a310166ef1696c4badaa0ef" kindref="member">afficher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Item</ref>&amp;<sp/>it);</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/item.h"/>
+  </compounddef>
+</doxygen>

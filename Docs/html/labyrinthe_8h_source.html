@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SDA 2019-20 Ruban de Möbius:  Fichier source de C:/PJ_SDA/labyrinthe.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SDA 2019-20 Ruban de Möbius
+   &#160;<span id="projectnumber">sp5_03.01.2020</span>
+   </div>
+   <div id="projectbrief">Pathfinding dans un labyrinthe sur un ruban de Möbius</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/PJ_SDA/labyrinthe.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="labyrinthe_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pile_8h.html">pile.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">enum</span> { NBDEPL = 8, DIM = 3 };</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> DEPL[NBDEPL][DIM] = {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {-1,0,0},{-1,1,0},{0,1,0},{1,1,0},{1,0,0},{1,-1,0},{0,-1,0},{-1,-1,0}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}; <span class="comment">// Déplacements possibles pour le dragon</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_laby.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_laby.html">Laby</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">enum</span> {NBFACE = 2}; <span class="comment">// Nombre de faces du labyrinthe</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="struct_tab2.html">Tab2</a> faces[NBFACE]; <span class="comment">// Tableaux 2D des faces du labyrinthe</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="struct_vec3.html">Vec3</a> crd_dragon; <span class="comment">// Coordonnées de la case DRAGON dans le labyrinthe</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#a01c1137f006923127d77b9c7286c0eb6">initialiser</a>(<span class="keywordtype">char</span>* path, <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#ae10daeec525899ab9f730fa110ab5a8a">afficher</a>(<span class="keyword">const</span> <a class="code" href="struct_laby.html">Laby</a>&amp; laby, <span class="keywordtype">bool</span> mecontent = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#a325501041b11efdd99b9cb51ffd47bbc">detruire</a>(<a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="struct_case.html">Case</a>* <a class="code" href="labyrinthe_8h.html#af73781b0c230c862b8086f44c671f896">get_case</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; crd, <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="struct_case.html">Case</a> <a class="code" href="labyrinthe_8h.html#ab20235b70edf353ea87b6220f380e005">read_case</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; crd, <span class="keyword">const</span> <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="labyrinthe_8h.html#a7b5f74fc1bbb1d6d4589e577b0070c5a">est_case</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; crd, <span class="keyword">const</span> <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="struct_vec3.html">Vec3</a> <a class="code" href="labyrinthe_8h.html#a15961b601cfe8ab3976c9be01789bbef">translation_moebius</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; v1, <span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; v2, <span class="keyword">const</span> <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<a class="code" href="struct_vec3.html">Vec3</a> <a class="code" href="labyrinthe_8h.html#a1f927ca31fbfc97126ebcda0113f9768">crd_face_unique</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; crd, <span class="keyword">const</span> <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="labyrinthe_8h.html#a800b6334aa2f3fc21ee47c2f6161f0cd">est_a_visiter</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; c1, <span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; c2, <span class="keyword">const</span> <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="labyrinthe_8h.html#ab2f6f53e3989cc85f0cd055c769fa464">est_connexe</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; c1, <span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; c2, <span class="keyword">const</span> <a class="code" href="struct_laby.html">Laby</a>&amp; laby);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_laby_html"><div class="ttname"><a href="struct_laby.html">Laby</a></div><div class="ttdef"><b>Definition:</b> labyrinthe.h:19</div></div>
+<div class="ttc" id="apile_8h_html"><div class="ttname"><a href="pile_8h.html">pile.h</a></div><div class="ttdoc">Composant Pile Structures de données et algorithmes.</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_ab20235b70edf353ea87b6220f380e005"><div class="ttname"><a href="labyrinthe_8h.html#ab20235b70edf353ea87b6220f380e005">read_case</a></div><div class="ttdeci">Case read_case(const Vec3 &amp;crd, const Laby &amp;laby)</div><div class="ttdoc">Lire une case.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:98</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_a800b6334aa2f3fc21ee47c2f6161f0cd"><div class="ttname"><a href="labyrinthe_8h.html#a800b6334aa2f3fc21ee47c2f6161f0cd">est_a_visiter</a></div><div class="ttdeci">bool est_a_visiter(const Vec3 &amp;c1, const Vec3 &amp;c2, const Laby &amp;laby)</div><div class="ttdoc">Vérifie si une case est à visiter ou non.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:188</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_a7b5f74fc1bbb1d6d4589e577b0070c5a"><div class="ttname"><a href="labyrinthe_8h.html#a7b5f74fc1bbb1d6d4589e577b0070c5a">est_case</a></div><div class="ttdeci">bool est_case(const Vec3 &amp;crd, const Laby &amp;laby)</div><div class="ttdoc">Test d'existence d'une case.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:110</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_a15961b601cfe8ab3976c9be01789bbef"><div class="ttname"><a href="labyrinthe_8h.html#a15961b601cfe8ab3976c9be01789bbef">translation_moebius</a></div><div class="ttdeci">Vec3 translation_moebius(const Vec3 &amp;v1, const Vec3 &amp;v2, const Laby &amp;laby)</div><div class="ttdoc">Translation vectorielle selon les contraintes d'un ruban de Moebius (inversions en Y aux bordures etc...</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:127</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_a1f927ca31fbfc97126ebcda0113f9768"><div class="ttname"><a href="labyrinthe_8h.html#a1f927ca31fbfc97126ebcda0113f9768">crd_face_unique</a></div><div class="ttdeci">Vec3 crd_face_unique(const Vec3 &amp;crd, const Laby &amp;laby)</div><div class="ttdoc">Vérifie si une case est à visiter ou non.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:164</div></div>
+<div class="ttc" id="astruct_vec3_html"><div class="ttname"><a href="struct_vec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> vecteur3D.h:13</div></div>
+<div class="ttc" id="astruct_tab2_html"><div class="ttname"><a href="struct_tab2.html">Tab2</a></div><div class="ttdef"><b>Definition:</b> tableau2D.h:12</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_ae10daeec525899ab9f730fa110ab5a8a"><div class="ttname"><a href="labyrinthe_8h.html#ae10daeec525899ab9f730fa110ab5a8a">afficher</a></div><div class="ttdeci">void afficher(const Laby &amp;laby, bool mecontent=false)</div><div class="ttdoc">Affiche un labyrinthe.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:53</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_ab2f6f53e3989cc85f0cd055c769fa464"><div class="ttname"><a href="labyrinthe_8h.html#ab2f6f53e3989cc85f0cd055c769fa464">est_connexe</a></div><div class="ttdeci">bool est_connexe(const Vec3 &amp;c1, const Vec3 &amp;c2, const Laby &amp;laby)</div><div class="ttdoc">Vérifie si une case est connexe à une autre (si on peut passer de l'une à l'autre)</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:207</div></div>
+<div class="ttc" id="astruct_case_html"><div class="ttname"><a href="struct_case.html">Case</a></div><div class="ttdef"><b>Definition:</b> case.h:14</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_a325501041b11efdd99b9cb51ffd47bbc"><div class="ttname"><a href="labyrinthe_8h.html#a325501041b11efdd99b9cb51ffd47bbc">detruire</a></div><div class="ttdeci">void detruire(Laby &amp;laby)</div><div class="ttdoc">Désalloue les tableaux représentant les faces d'un labyrinthe.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:75</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_a01c1137f006923127d77b9c7286c0eb6"><div class="ttname"><a href="labyrinthe_8h.html#a01c1137f006923127d77b9c7286c0eb6">initialiser</a></div><div class="ttdeci">void initialiser(char *path, Laby &amp;laby)</div><div class="ttdoc">Lit un fichier .txt pour initialiser le labyrinthe.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:18</div></div>
+<div class="ttc" id="alabyrinthe_8h_html_af73781b0c230c862b8086f44c671f896"><div class="ttname"><a href="labyrinthe_8h.html#af73781b0c230c862b8086f44c671f896">get_case</a></div><div class="ttdeci">Case * get_case(const Vec3 &amp;crd, Laby &amp;laby)</div><div class="ttdoc">Trouver une case.</div><div class="ttdef"><b>Definition:</b> labyrinthe.cpp:87</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

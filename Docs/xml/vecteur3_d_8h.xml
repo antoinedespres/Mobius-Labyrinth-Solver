@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="vecteur3_d_8h" kind="file" language="C++">
+    <compoundname>vecteur3D.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cassert</includes>
+    <includedby refid="case_8h" local="yes">C:/PJ_SDA/case.h</includedby>
+    <includedby refid="vecteur3_d_8cpp" local="yes">C:/PJ_SDA/vecteur3D.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>cassert</label>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/PJ_SDA/case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/PJ_SDA/labyrinthe.cpp</label>
+        <link refid="labyrinthe_8cpp"/>
+      </node>
+      <node id="14">
+        <label>C:/PJ_SDA/tableau2D.cpp</label>
+        <link refid="tableau2_d_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/PJ_SDA/labyGame.cpp</label>
+        <link refid="laby_game_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/PJ_SDA/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/PJ_SDA/vecteur3D.cpp</label>
+        <link refid="vecteur3_d_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/PJ_SDA/tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/PJ_SDA/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/PJ_SDA/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/PJ_SDA/case.cpp</label>
+        <link refid="case_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/PJ_SDA/item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/PJ_SDA/labyrinthe.h</label>
+        <link refid="labyrinthe_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/PJ_SDA/labyGame.h</label>
+        <link refid="laby_game_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/PJ_SDA/item.cpp</label>
+        <link refid="item_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_vec3" prot="public">Vec3</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vecteur3_d_8h_1ac464ede94b2cb4d8d0101f8653c0f31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 tuple</definition>
+        <argsstring>(int x, int y, int z)</argsstring>
+        <name>tuple</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Création d&apos;un vecteur à trois coordonnées. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnée d&apos;abscisse </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnée d&apos;ordonnée </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de face </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Le vecteur v </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/vecteur3D.h" line="26" column="6" bodyfile="C:/PJ_SDA/vecteur3D.cpp" bodystart="19" bodyend="22" declfile="C:/PJ_SDA/vecteur3D.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vecteur3_d_8h_1a2e4cb136cbf6d5cbda8233914cf8cd5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 from_list</definition>
+        <argsstring>(const int crd[3])</argsstring>
+        <name>from_list</name>
+        <param>
+          <type>const int</type>
+          <declname>crd</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Passage d&apos;un tableau de 3 entiers à un Vecteur 3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vableau de 3 entiers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vecteur 3 issu de la conversion</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau de 3 entiers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vecteur 3 issu de la conversion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/vecteur3D.h" line="33" column="6" bodyfile="C:/PJ_SDA/vecteur3D.cpp" bodystart="29" bodyend="35" declfile="C:/PJ_SDA/vecteur3D.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vecteur3_d_8h_1aad53320b8ee804e6ea290d2ef538ba63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher</definition>
+        <argsstring>(const Vec3 &amp;v)</argsstring>
+        <name>afficher</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Affichage (x,y,z) d&apos;un Vecteur 3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnées d&apos;une case</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Coordonnées</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>d&apos;une case </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/vecteur3D.h" line="39" column="6" bodyfile="C:/PJ_SDA/vecteur3D.cpp" bodystart="41" bodyend="43" declfile="C:/PJ_SDA/vecteur3D.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vecteur3_d_8h_1ab7192a0ac784aa3ed46139dc68c523e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool egal</definition>
+        <argsstring>(const Vec3 &amp;v1, const Vec3 &amp;v2)</argsstring>
+        <name>egal</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Test d&apos;égalité entre deux Vecteurs 3 (ssi toutes coordonnées égales) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vremier vecteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vecond vecteur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si toutes les coordonnées sont égales, false sinon</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Premier vecteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second vecteur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si toutes les coordonnées sont égales, false sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/vecteur3D.h" line="47" column="6" bodyfile="C:/PJ_SDA/vecteur3D.cpp" bodystart="51" bodyend="56" declfile="C:/PJ_SDA/vecteur3D.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vecteur3_d_8h_1a67a54f5ee9fb0739c913afba4fa7badf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 inv_y</definition>
+        <argsstring>(const Vec3 &amp;v, const int max_y)</argsstring>
+        <name>inv_y</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>max_y</declname>
+        </param>
+        <briefdescription>
+<para>Inversion des ordonnées d&apos;un Vecteur 3 par rapport au y_max. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vecteur 3D </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valeur maximale d&apos;ordonnée </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vecteur avec coordonnée y inversée </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/vecteur3D.h" line="55" column="6" bodyfile="C:/PJ_SDA/vecteur3D.cpp" bodystart="64" bodyend="70" declfile="C:/PJ_SDA/vecteur3D.h" declline="55" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant vecteur 3D Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="struct_vec3" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;<sp/></highlight><highlight class="comment">//<sp/>Coordonnée<sp/>x<sp/>du<sp/>point<sp/>(colonne)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;<sp/></highlight><highlight class="comment">//<sp/>Coordonnée<sp/>y<sp/>du<sp/>point<sp/>(ligne)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z;<sp/></highlight><highlight class="comment">//<sp/>Coordonnée<sp/>z<sp/>du<sp/>point<sp/>(face)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/><ref refid="vecteur3_d_8h_1ac464ede94b2cb4d8d0101f8653c0f31c" kindref="member">tuple</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/><ref refid="vecteur3_d_8h_1a2e4cb136cbf6d5cbda8233914cf8cd5d" kindref="member">from_list</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>crd[3]);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vecteur3_d_8h_1aad53320b8ee804e6ea290d2ef538ba63" kindref="member">afficher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="vecteur3_d_8h_1ab7192a0ac784aa3ed46139dc68c523e7" kindref="member">egal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>v2);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/><ref refid="vecteur3_d_8h_1a67a54f5ee9fb0739c913afba4fa7badf" kindref="member">inv_y</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_y);</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/vecteur3D.h"/>
+  </compounddef>
+</doxygen>

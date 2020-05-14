@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="laby_game_8h" kind="file" language="C++">
+    <compoundname>labyGame.h</compoundname>
+    <includes refid="labyrinthe_8h" local="yes">labyrinthe.h</includes>
+    <includedby refid="laby_game_8cpp" local="yes">C:/PJ_SDA/labyGame.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">C:/PJ_SDA/main.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>labyrinthe.h</label>
+        <link refid="labyrinthe_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/labyGame.h</label>
+        <link refid="laby_game_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/PJ_SDA/labyGame.cpp</label>
+        <link refid="laby_game_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/PJ_SDA/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/labyGame.h</label>
+        <link refid="laby_game_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="laby_game_8h_1adec24760babd442c43aace3b514d7a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void maj_chemin</definition>
+        <argsstring>(Pile &amp;chemin, Vec3 &amp;nouv_crd, Laby &amp;laby)</argsstring>
+        <name>maj_chemin</name>
+        <param>
+          <type><ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>chemin</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>nouv_crd</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_laby" kindref="compound">Laby</ref> &amp;</type>
+          <declname>laby</declname>
+        </param>
+        <briefdescription>
+<para>Met à jour la pile contenant les coordonnées du chemin du dragon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">chemin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chemin déjà parcouru </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nouv_crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nouvelle coordonnée à empiler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">laby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le labyrinthe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyGame.h" line="18" column="6" bodyfile="C:/PJ_SDA/labyGame.cpp" bodystart="20" bodyend="29" declfile="C:/PJ_SDA/labyGame.h" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="laby_game_8h_1aaf229a2ed61a835a28258b1a8e588be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MissionDragon</definition>
+        <argsstring>()</argsstring>
+        <name>MissionDragon</name>
+        <briefdescription>
+<para>Parcours du labyrinthe par le dragon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/labyGame.h" line="23" column="6" bodyfile="C:/PJ_SDA/labyGame.cpp" bodystart="34" bodyend="97" declfile="C:/PJ_SDA/labyGame.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant LabyGame Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="labyrinthe_8h" kindref="compound">labyrinthe.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="laby_game_8h_1adec24760babd442c43aace3b514d7a5d" kindref="member">maj_chemin</ref>(<ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>chemin,<sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>nouv_crd,<sp/><ref refid="struct_laby" kindref="compound">Laby</ref>&amp;<sp/>laby);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="laby_game_8h_1aaf229a2ed61a835a28258b1a8e588be5" kindref="member">MissionDragon</ref>();</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/labyGame.h"/>
+  </compounddef>
+</doxygen>

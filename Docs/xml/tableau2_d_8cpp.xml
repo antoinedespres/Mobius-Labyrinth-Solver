@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="tableau2_d_8cpp" kind="file" language="C++">
+    <compoundname>tableau2D.cpp</compoundname>
+    <includes refid="tableau2_d_8h" local="yes">tableau2D.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cassert</label>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/tableau2D.cpp</label>
+        <link refid="tableau2_d_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tableau2_d_8cpp_1a0f974639e72da3b04404015ca888573c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initialiser</definition>
+        <argsstring>(int nbL, int nbC, Tab2 &amp;t)</argsstring>
+        <name>initialiser</name>
+        <param>
+          <type>int</type>
+          <declname>nbL</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbC</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Initialise un tableau 2D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nbL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de lignes du tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de colonnes du tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à initialiser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.cpp" line="18" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="18" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8cpp_1ac59d14ce7a8df3fe5f7a66f208de09ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write</definition>
+        <argsstring>(Item it, int l, int c, Tab2 &amp;t)</argsstring>
+        <name>write</name>
+        <param>
+          <type><ref refid="struct_case" kindref="compound">Item</ref></type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Remplir une case du tableau avec un Item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item à mettre dans la case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de ligne de l&apos;emplacement de la case à remplir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de colonne de l&apos;emplacement de la case à remplir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à écrire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>N° de Ligne et de colonne positifs et compris dans le tableau. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.cpp" line="44" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8cpp_1a9c29d292cab9217d9265d021710c71b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_case" kindref="compound">Item</ref> *</type>
+        <definition>Item* get</definition>
+        <argsstring>(Tab2 &amp;t, int l, int c)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Obtenir l&apos;Item stocké dans une case du tableau. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtenir l&apos;Item stockÃ© dans une case du tableau.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à lire </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de ligne de l&apos;emplacement de la case à lire </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N° de colonne de l&apos;emplacement de la case à lire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Item situé dans la case spécifiée </para>
+</simplesect>
+<simplesect kind="pre"><para>N° de Ligne et de colonne positifs et compris dans le tableau. </para>
+</simplesect>
+<simplesect kind="pre"><para><ref refid="struct_case" kindref="compound">Case</ref> spécifiée non vide </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.cpp" line="60" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8cpp_1aefb6a5993417064f268de6024e4ce164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_case" kindref="compound">Item</ref></type>
+        <definition>const Item read</definition>
+        <argsstring>(const Tab2 &amp;t, int l, int c)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const <ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Lit une case et retourne ses coordonnées si elle a bien été lue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Lit une case et retourne ses coordonnÃ©es si elle a bien Ã©tÃ© lue.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de ligne de la case </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de colonne de la case </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>les coordonnées de la case </para>
+</simplesect>
+<simplesect kind="pre"><para>N° de ligne et de colonne tous deux supérieurs à 0 </para>
+</simplesect>
+<simplesect kind="pre"><para>la case a été marquée comme used </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.cpp" line="76" column="12" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8cpp_1a0a5e08e91eef285cad9be3ac14cccaa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher</definition>
+        <argsstring>(const Tab2 &amp;t)</argsstring>
+        <name>afficher</name>
+        <param>
+          <type>const <ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Affiche un tableau 2D et son contenu initialisé </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Affiche un tableau 2D et son contenu initialisÃ©</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau 2D à afficher </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.cpp" line="87" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="87" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="tableau2_d_8cpp_1ac4c2c2660fa515f629c26682a4e61b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detruire</definition>
+        <argsstring>(Tab2 &amp;t)</argsstring>
+        <name>detruire</name>
+        <param>
+          <type><ref refid="struct_tab2" kindref="compound">Tab2</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Désalloue et rend NULL un tableau 2D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>DÃ©salloue et rend NULL un tableau 2D.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in-out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>t Tableau 2D à désallouer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.cpp" line="107" column="6" bodyfile="C:/PJ_SDA/tableau2D.cpp" bodystart="107" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant tableau à 2 dimensions Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tableau2_d_8h" kindref="compound">tableau2D.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8cpp_1a0f974639e72da3b04404015ca888573c" kindref="member">initialiser</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbL,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbC,<sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(nbL<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>nbC<sp/>&gt;=<sp/>0);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>t.nbC<sp/>=<sp/>nbC;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>t.nbL<sp/>=<sp/>nbL;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>t.mat<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Item</ref><sp/>*<sp/>[nbL];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>t.used<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*<sp/>[nbL];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>0;<sp/>l<sp/>&lt;<sp/>nbL;<sp/>l++)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.mat[l]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Item</ref><sp/>[nbC];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.used[l]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>[nbC];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>0;<sp/>c<sp/>&lt;<sp/>nbC;<sp/>c++)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.used[l][c]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8cpp_1ac59d14ce7a8df3fe5f7a66f208de09ba" kindref="member">write</ref>(<ref refid="struct_case" kindref="compound">Item</ref><sp/>it,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(l<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>c<sp/>&gt;=<sp/>0);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(l<sp/>&lt;<sp/>t.nbL<sp/>&amp;&amp;<sp/>c<sp/>&lt;<sp/>t.nbC);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>t.mat[l][c]<sp/>=<sp/>it;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>t.used[l][c]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="struct_case" kindref="compound">Item</ref>*<sp/><ref refid="tableau2_d_8cpp_1a9c29d292cab9217d9265d021710c71b9" kindref="member">get</ref>(<ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(l<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>c<sp/>&gt;=<sp/>0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(l<sp/>&lt;<sp/>t.nbL<sp/>&amp;&amp;<sp/>c<sp/>&lt;<sp/>t.nbC);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(t.used[l][c]<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;t.mat[l][c];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Item</ref><sp/><ref refid="tableau2_d_8cpp_1aefb6a5993417064f268de6024e4ce164" kindref="member">read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(l<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>c<sp/>&gt;=<sp/>0);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(l<sp/>&lt;<sp/>t.nbL<sp/>&amp;&amp;<sp/>c<sp/>&lt;<sp/>t.nbC);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(t.used[l][c]<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t.mat[l][c];</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8cpp_1a0a5e08e91eef285cad9be3ac14cccaa4" kindref="member">afficher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;{\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>0;<sp/>l<sp/>&lt;<sp/>t.nbL;<sp/>l++)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>{\n<sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>0;<sp/>c<sp/>&lt;<sp/>t.nbC;<sp/>c++)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t.used[l][c])<sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="case_8cpp_1ad95785d41b5cf7e883e4361d26f496cd" kindref="member">string</ref>(t.mat[l][c]);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>&lt;<sp/>t.nbC<sp/>-<sp/>1)<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/><sp/><sp/><sp/>}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l<sp/>&lt;<sp/>t.nbL<sp/>-<sp/>1)<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n}\n<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tableau2_d_8cpp_1ac4c2c2660fa515f629c26682a4e61b17" kindref="member">detruire</ref>(<ref refid="struct_tab2" kindref="compound">Tab2</ref>&amp;<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>0;<sp/>l<sp/>&lt;<sp/>t.nbL;<sp/>l++)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>t.mat[l];</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.mat[l]<sp/>=<sp/>NULL;<sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>t.used[l];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.used[l]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>t.mat;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>t.mat<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>t.used;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>t.used<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/tableau2D.cpp"/>
+  </compounddef>
+</doxygen>

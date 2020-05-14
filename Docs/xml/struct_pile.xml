@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_pile" kind="struct" language="C++" prot="public">
+    <compoundname>Pile</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_pile_1aae4ad1fa4708655be2a1037090238f8c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref> *</type>
+        <definition>Vec3* Pile::tab</definition>
+        <argsstring></argsstring>
+        <name>tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="13" column="6" bodyfile="C:/PJ_SDA/pile.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pile_1ab9eae425fcc9a612116551ed4e93f7f5" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Pile::nbEl</definition>
+        <argsstring></argsstring>
+        <name>nbEl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="14" column="14" bodyfile="C:/PJ_SDA/pile.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pile_1af4504a41875ec5066d655742cc1344d3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Pile::pas</definition>
+        <argsstring></argsstring>
+        <name>pas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="15" column="14" bodyfile="C:/PJ_SDA/pile.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pile_1a1dacdd09e0af7cc2b952acf95e0b23dd" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Pile::cap</definition>
+        <argsstring></argsstring>
+        <name>cap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="16" column="14" bodyfile="C:/PJ_SDA/pile.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Pile</label>
+        <link refid="struct_pile"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tab</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Vec3</label>
+        <link refid="struct_vec3"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/PJ_SDA/pile.h" line="12" column="11" bodyfile="C:/PJ_SDA/pile.h" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="struct_pile_1a1dacdd09e0af7cc2b952acf95e0b23dd" prot="public" virt="non-virtual"><scope>Pile</scope><name>cap</name></member>
+      <member refid="struct_pile_1ab9eae425fcc9a612116551ed4e93f7f5" prot="public" virt="non-virtual"><scope>Pile</scope><name>nbEl</name></member>
+      <member refid="struct_pile_1af4504a41875ec5066d655742cc1344d3" prot="public" virt="non-virtual"><scope>Pile</scope><name>pas</name></member>
+      <member refid="struct_pile_1aae4ad1fa4708655be2a1037090238f8c" prot="public" virt="non-virtual"><scope>Pile</scope><name>tab</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

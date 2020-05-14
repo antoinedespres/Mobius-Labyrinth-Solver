@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_tab2" kind="struct" language="C++" prot="public">
+    <compoundname>Tab2</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_tab2_1a5dcb60692eca609da48435eb7ff20d68" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_case" kindref="compound">Item</ref> **</type>
+        <definition>Item** Tab2::mat</definition>
+        <argsstring></argsstring>
+        <name>mat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="13" column="6" bodyfile="C:/PJ_SDA/tableau2D.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tab2_1a4c46642b6390cc55511478e46291acbb" prot="public" static="no" mutable="no">
+        <type>bool **</type>
+        <definition>bool** Tab2::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="14" column="6" bodyfile="C:/PJ_SDA/tableau2D.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tab2_1ae67bd14528f582341576c0fcc1363c83" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tab2::nbC</definition>
+        <argsstring></argsstring>
+        <name>nbC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="15" column="5" bodyfile="C:/PJ_SDA/tableau2D.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tab2_1aa17b7f1df5f40792cf78446307a33cef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tab2::nbL</definition>
+        <argsstring></argsstring>
+        <name>nbL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/tableau2D.h" line="16" column="5" bodyfile="C:/PJ_SDA/tableau2D.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Tab2</label>
+        <link refid="struct_tab2"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mat</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Vec3</label>
+        <link refid="struct_vec3"/>
+      </node>
+      <node id="2">
+        <label>Case</label>
+        <link refid="struct_case"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>crd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/PJ_SDA/tableau2D.h" line="12" column="11" bodyfile="C:/PJ_SDA/tableau2D.h" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="struct_tab2_1a5dcb60692eca609da48435eb7ff20d68" prot="public" virt="non-virtual"><scope>Tab2</scope><name>mat</name></member>
+      <member refid="struct_tab2_1ae67bd14528f582341576c0fcc1363c83" prot="public" virt="non-virtual"><scope>Tab2</scope><name>nbC</name></member>
+      <member refid="struct_tab2_1aa17b7f1df5f40792cf78446307a33cef" prot="public" virt="non-virtual"><scope>Tab2</scope><name>nbL</name></member>
+      <member refid="struct_tab2_1a4c46642b6390cc55511478e46291acbb" prot="public" virt="non-virtual"><scope>Tab2</scope><name>used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="pile_8h" kind="file" language="C++">
+    <compoundname>pile.h</compoundname>
+    <includes refid="tableau2_d_8h" local="yes">tableau2D.h</includes>
+    <includedby refid="labyrinthe_8h" local="yes">C:/PJ_SDA/labyrinthe.h</includedby>
+    <includedby refid="pile_8cpp" local="yes">C:/PJ_SDA/pile.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cassert</label>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tableau2D.h</label>
+        <link refid="tableau2_d_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>item.h</label>
+        <link refid="item_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>C:/PJ_SDA/labyrinthe.cpp</label>
+        <link refid="labyrinthe_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/PJ_SDA/labyGame.cpp</label>
+        <link refid="laby_game_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/PJ_SDA/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/PJ_SDA/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/PJ_SDA/labyrinthe.h</label>
+        <link refid="labyrinthe_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/PJ_SDA/labyGame.h</label>
+        <link refid="laby_game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_pile" prot="public">Pile</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pile_8h_1a0f64868948f4ec25e25b900d78dc5b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initialiser</definition>
+        <argsstring>(unsigned int n, unsigned int p, Pile &amp;pile)</argsstring>
+        <name>initialiser</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>pile</declname>
+        </param>
+        <briefdescription>
+<para>Initialiser une pile vide la pile est allouée en mémoire dynamique. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="pile_8h_1a2768c7cefd56136f83840228e374470b" kindref="member">detruire</ref> pour une désallocation en fin d&apos;utilisation </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La capacité de la pile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le pas d&apos;extension de la pile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile à initialiser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>n&gt;0</para>
+</simplesect>
+Initialiser une pile vide la pile est allouée en mémoire dynamique.</para>
+<para><simplesect kind="see"><para><ref refid="pile_8h_1a2768c7cefd56136f83840228e374470b" kindref="member">detruire</ref> pour une d�sallocation en fin d&apos;utilisation </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La capacit� de la pile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le pas d&apos;extension de la pile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile � initialiser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>n&gt;0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="28" column="6" bodyfile="C:/PJ_SDA/pile.cpp" bodystart="21" bodyend="26" declfile="C:/PJ_SDA/pile.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pile_8h_1acb921a706453e114e6dc663b4a5324d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void empiler</definition>
+        <argsstring>(const Vec3 &amp;it, Pile &amp;pile)</argsstring>
+        <name>empiler</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>pile</declname>
+        </param>
+        <briefdescription>
+<para>Empiler un item sur une pile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L&apos;item à empiler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L&apos;item � empiler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="35" column="6" bodyfile="C:/PJ_SDA/pile.cpp" bodystart="33" bodyend="45" declfile="C:/PJ_SDA/pile.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pile_8h_1a8b3b37884e20c6815951bc9408a5ee38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void depiler</definition>
+        <argsstring>(Pile &amp;pile)</argsstring>
+        <name>depiler</name>
+        <param>
+          <type><ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>pile</declname>
+        </param>
+        <briefdescription>
+<para>Dépiler l&apos;item au sommet de pile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>la pile n&apos;est pas vide</para>
+</simplesect>
+Dépiler l&apos;item au sommet de pile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>la pile n&apos;est pas vide </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="42" column="6" bodyfile="C:/PJ_SDA/pile.cpp" bodystart="52" bodyend="55" declfile="C:/PJ_SDA/pile.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pile_8h_1ad9035b858b225127210378e9c5234861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 sommet</definition>
+        <argsstring>(const Pile &amp;pile)</argsstring>
+        <name>sommet</name>
+        <param>
+          <type>const <ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>pile</declname>
+        </param>
+        <briefdescription>
+<para>Lire l&apos;item au sommet de la pile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeur de l&apos;item au sommet de la pile </para>
+</simplesect>
+<simplesect kind="pre"><para>la pile n&apos;est pas vide </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="50" column="6" bodyfile="C:/PJ_SDA/pile.cpp" bodystart="63" bodyend="66" declfile="C:/PJ_SDA/pile.h" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pile_8h_1a2768c7cefd56136f83840228e374470b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detruire</definition>
+        <argsstring>(Pile &amp;pile)</argsstring>
+        <name>detruire</name>
+        <param>
+          <type><ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>pile</declname>
+        </param>
+        <briefdescription>
+<para>Désallouer une pile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="pile_8h_1a0f64868948f4ec25e25b900d78dc5b03" kindref="member">initialiser</ref>, la pile a déjà été initialisée </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile à désallouer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Désallouer une pile.</para>
+<para><simplesect kind="see"><para><ref refid="pile_8h_1a0f64868948f4ec25e25b900d78dc5b03" kindref="member">initialiser</ref>, la pile a d�j� �t� initialis�e </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile � d�sallouer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="57" column="6" bodyfile="C:/PJ_SDA/pile.cpp" bodystart="73" bodyend="79" declfile="C:/PJ_SDA/pile.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pile_8h_1ae27db206e4e078b9ed06fab11258c867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool est_vide</definition>
+        <argsstring>(const Pile &amp;pile)</argsstring>
+        <name>est_vide</name>
+        <param>
+          <type>const <ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>pile</declname>
+        </param>
+        <briefdescription>
+<para>Test de pile vide. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si p est vide, false sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="64" column="6" bodyfile="C:/PJ_SDA/pile.cpp" bodystart="86" bodyend="88" declfile="C:/PJ_SDA/pile.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pile_8h_1ac8874fd7dfed5ba5bee5b9209157f39c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher</definition>
+        <argsstring>(const Pile &amp;pile)</argsstring>
+        <name>afficher</name>
+        <param>
+          <type>const <ref refid="struct_pile" kindref="compound">Pile</ref> &amp;</type>
+          <declname>pile</declname>
+        </param>
+        <briefdescription>
+<para>Affichage des coordonnées du chemin selon la mise en forme prévue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile contenant les coordonnées</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Affichage des coordonnées du chemin selon la mise en forme prévue.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pile contenant les coordonn�es </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/pile.h" line="70" column="6" bodyfile="C:/PJ_SDA/pile.cpp" bodystart="94" bodyend="100" declfile="C:/PJ_SDA/pile.h" declline="70" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant <ref refid="struct_pile" kindref="compound">Pile</ref> Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tableau2_d_8h" kindref="compound">tableau2D.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="struct_pile" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_pile" kindref="compound">Pile</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>*<sp/>tab;<sp/></highlight><highlight class="comment">//<sp/>Liste<sp/>contenant<sp/>les<sp/>éléments<sp/>de<sp/>la<sp/>pile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEl;<sp/></highlight><highlight class="comment">//<sp/>Nombre<sp/>d&apos;éléments<sp/>dans<sp/>la<sp/>pile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pas;<sp/></highlight><highlight class="comment">//<sp/>Pas<sp/>d&apos;extension<sp/>de<sp/>la<sp/>pile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cap;<sp/></highlight><highlight class="comment">//<sp/>Capacité<sp/>de<sp/>la<sp/>pile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pile_8h_1a0f64868948f4ec25e25b900d78dc5b03" kindref="member">initialiser</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p,<sp/><ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>pile);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pile_8h_1acb921a706453e114e6dc663b4a5324d9" kindref="member">empiler</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref>&amp;<sp/>it,<sp/><ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>pile);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pile_8h_1a8b3b37884e20c6815951bc9408a5ee38" kindref="member">depiler</ref>(<ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>pile);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/><ref refid="pile_8h_1ad9035b858b225127210378e9c5234861" kindref="member">sommet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>pile);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pile_8h_1a2768c7cefd56136f83840228e374470b" kindref="member">detruire</ref>(<ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>pile);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pile_8h_1ae27db206e4e078b9ed06fab11258c867" kindref="member">est_vide</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>pile);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pile_8h_1ac8874fd7dfed5ba5bee5b9209157f39c" kindref="member">afficher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_pile" kindref="compound">Pile</ref>&amp;<sp/>pile);</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/pile.h"/>
+  </compounddef>
+</doxygen>

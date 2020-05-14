@@ -1,0 +1,332 @@
+.TH "C:/PJ_SDA/labyrinthe.h" 3 "Vendredi 3 Janvier 2020" "Version sp5_03.01.2020" "SDA 2019-20 Ruban de Möbius" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/PJ_SDA/labyrinthe.h \- Composant labyrinthe Structures de données et algorithmes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <fstream>\fP
+.br
+\fC#include 'pile\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBLaby\fP"
+.br
+.in -1c
+.SS "Énumérations"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBNBDEPL\fP = 8, \fBDIM\fP = 3 }"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitialiser\fP (char *path, \fBLaby\fP &laby)"
+.br
+.RI "Lit un fichier \&.txt pour initialiser le labyrinthe\&. "
+.ti -1c
+.RI "void \fBafficher\fP (const \fBLaby\fP &laby, bool mecontent=false)"
+.br
+.RI "Affiche un labyrinthe\&. "
+.ti -1c
+.RI "void \fBdetruire\fP (\fBLaby\fP &laby)"
+.br
+.RI "Désalloue les tableaux représentant les faces d'un labyrinthe\&. "
+.ti -1c
+.RI "\fBCase\fP * \fBget_case\fP (const \fBVec3\fP &crd, \fBLaby\fP &laby)"
+.br
+.RI "Trouver une case\&. "
+.ti -1c
+.RI "\fBCase\fP \fBread_case\fP (const \fBVec3\fP &crd, const \fBLaby\fP &laby)"
+.br
+.RI "Lire une case\&. "
+.ti -1c
+.RI "bool \fBest_case\fP (const \fBVec3\fP &crd, const \fBLaby\fP &laby)"
+.br
+.RI "Test d'existence d'une case\&. "
+.ti -1c
+.RI "\fBVec3\fP \fBtranslation_moebius\fP (const \fBVec3\fP &v1, const \fBVec3\fP &v2, const \fBLaby\fP &laby)"
+.br
+.RI "Translation vectorielle selon les contraintes d'un ruban de Moebius (inversions en Y aux bordures etc\&.\&.\&.) "
+.ti -1c
+.RI "\fBVec3\fP \fBcrd_face_unique\fP (const \fBVec3\fP &crd, const \fBLaby\fP &laby)"
+.br
+.RI "Vérifie si une case est à visiter ou non\&. "
+.ti -1c
+.RI "bool \fBest_a_visiter\fP (const \fBVec3\fP &c1, const \fBVec3\fP &c2, const \fBLaby\fP &laby)"
+.br
+.RI "Vérifie si une case est à visiter ou non\&. "
+.ti -1c
+.RI "bool \fBest_connexe\fP (const \fBVec3\fP &c1, const \fBVec3\fP &c2, const \fBLaby\fP &laby)"
+.br
+.RI "Vérifie si une case est connexe à une autre (si on peut passer de l'une à l'autre) "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const int \fBDEPL\fP [NBDEPL][DIM]"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Composant labyrinthe Structures de données et algorithmes\&. 
+
+Projet DesprésGr109NougaretGr109 
+.PP
+\fBAuteur\fP
+.RS 4
+Antoine Després, Anicet Nougaret 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1 06/01/20 
+.RE
+.PP
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void afficher (const \fBLaby\fP & laby, bool mecontent)"
+
+.PP
+Affiche un labyrinthe\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIlaby\fP Labyrinthe à afficher 
+.br
+\fImecontent\fP Affiche le mécontentement du dragon si true (false si non renseigné) 
+.RE
+.PP
+
+.SS "\fBVec3\fP crd_face_unique (const \fBVec3\fP & crd, const \fBLaby\fP & laby)"
+
+.PP
+Vérifie si une case est à visiter ou non\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIdepart\fP Première case 
+.br
+\fIarrivee\fP Deuxième case 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+true ou false selon que la case soit à visiter ou non
+.RE
+.PP
+Rapporte les coordonnées à un labyrinthe d'une seule face 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIcrd\fP La coordonnée d'entrée 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Nouvelle coordonnée
+.RE
+.PP
+Vérifie si une case est à visiter ou non\&.
+.PP
+\fBParamètres\fP
+.RS 4
+\fIcrd\fP La coordonnée d'entrée 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Nouvelle coordonnée 
+.RE
+.PP
+
+.SS "void detruire (\fBLaby\fP & laby)"
+
+.PP
+Désalloue les tableaux représentant les faces d'un labyrinthe\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIlaby\fP Labyrinthe à détruire 
+.RE
+.PP
+
+.SS "bool est_a_visiter (const \fBVec3\fP & depart, const \fBVec3\fP & arrivee, const \fBLaby\fP & laby)"
+
+.PP
+Vérifie si une case est à visiter ou non\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIdepart\fP Première case 
+.br
+\fIarrivee\fP Deuxième case 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+true ou false selon que la case soit à visiter ou non 
+.RE
+.PP
+
+.SS "bool est_case (const \fBVec3\fP & crd, const \fBLaby\fP & laby)"
+
+.PP
+Test d'existence d'une case\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIcrd\fP Coordonnées d'une case 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+false ou true selon l'existence ou non de la case 
+.RE
+.PP
+
+.SS "bool est_connexe (const \fBVec3\fP & depart, const \fBVec3\fP & arrivee, const \fBLaby\fP & laby)"
+
+.PP
+Vérifie si une case est connexe à une autre (si on peut passer de l'une à l'autre) 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIdepart\fP Première case 
+.br
+\fIarrivee\fP Deuxième case 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+true ou false selon que les deux cases soient connexes ou non 
+.RE
+.PP
+
+.SS "\fBCase\fP* get_case (const \fBVec3\fP & crd, \fBLaby\fP & laby)"
+
+.PP
+Trouver une case\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIcrd\fP Coordonnées d'une case 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+.RE
+.PP
+
+.SS "void initialiser (char * path, \fBLaby\fP & laby)"
+
+.PP
+Lit un fichier \&.txt pour initialiser le labyrinthe\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIpath\fP Chemin du fichier \&.txt qui décrit le labyrinthe 
+.br
+\fIlaby\fP Labyrinthe à initialiser 
+.RE
+.PP
+
+.SS "\fBCase\fP read_case (const \fBVec3\fP & crd, const \fBLaby\fP & laby)"
+
+.PP
+Lire une case\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIcrd\fP Coordonnées d'une case 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+.RE
+.PP
+
+.SS "\fBVec3\fP translation_moebius (const \fBVec3\fP & depart, const \fBVec3\fP & translation, const \fBLaby\fP & laby)"
+
+.PP
+Translation vectorielle selon les contraintes d'un ruban de Moebius (inversions en Y aux bordures etc\&.\&.\&.) 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIdepart\fP Loordonnées de départ 
+.br
+\fI[]\fP translation Translation à réaliser 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+nouv Le nouveau vecteur issu de la translation 
+.RE
+.PP
+\fBPrécondition\fP
+.RS 4
+Le nombre de lignes d'une face est supérieur à nouv\&.y
+.RE
+.PP
+\fBParamètres\fP
+.RS 4
+\fIdepart\fP Coordonnées de départ 
+.br
+\fI[]\fP translation Translation à réaliser 
+.br
+\fIlaby\fP Le labyrinthe 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+nouv Le nouveau vecteur issu de la translation 
+.RE
+.PP
+\fBPrécondition\fP
+.RS 4
+Le nombre de lignes d'une face est supérieur à nouv\&.y 
+.RE
+.PP
+
+.SH "Documentation des variables"
+.PP 
+.SS "const int DEPL[NBDEPL][DIM]"
+\fBValeur initiale :\fP
+.PP
+.nf
+= {
+    {-1,0,0},{-1,1,0},{0,1,0},{1,1,0},{1,0,0},{1,-1,0},{0,-1,0},{-1,-1,0}
+}
+.fi
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour SDA 2019-20 Ruban de Möbius à partir du code source\&.

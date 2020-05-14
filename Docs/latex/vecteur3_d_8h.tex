@@ -1,0 +1,156 @@
+\hypertarget{vecteur3_d_8h}{}\doxysection{Référence du fichier C\+:/\+P\+J\+\_\+\+S\+D\+A/vecteur3D.h}
+\label{vecteur3_d_8h}\index{C:/PJ\_SDA/vecteur3D.h@{C:/PJ\_SDA/vecteur3D.h}}
+
+
+Composant vecteur 3D Structures de données et algorithmes.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_vec3}{Vec3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{vecteur3_d_8h_ac464ede94b2cb4d8d0101f8653c0f31c}{tuple}} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}un vecteur à trois coordonnées. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{vecteur3_d_8h_a2e4cb136cbf6d5cbda8233914cf8cd5d}{from\+\_\+list}} (const int crd\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Passage d\textquotesingle{}un tableau de 3 entiers à un Vecteur 3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{vecteur3_d_8h_aad53320b8ee804e6ea290d2ef538ba63}{afficher}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&v)
+\begin{DoxyCompactList}\small\item\em Affichage (x,y,z) d\textquotesingle{}un Vecteur 3. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{vecteur3_d_8h_ab7192a0ac784aa3ed46139dc68c523e7}{egal}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&v1, const \mbox{\hyperlink{struct_vec3}{Vec3}} \&v2)
+\begin{DoxyCompactList}\small\item\em Test d\textquotesingle{}égalité entre deux Vecteurs 3 (ssi toutes coordonnées égales) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{vecteur3_d_8h_a67a54f5ee9fb0739c913afba4fa7badf}{inv\+\_\+y}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&v, const int max\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Inversion des ordonnées d\textquotesingle{}un Vecteur 3 par rapport au y\+\_\+max. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Composant vecteur 3D Structures de données et algorithmes. 
+
+Projet Després\+Gr109\+Nougaret\+Gr109 \begin{DoxyAuthor}{Auteur}
+Antoine Després, Anicet Nougaret 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 06/01/20 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{vecteur3_d_8h_aad53320b8ee804e6ea290d2ef538ba63}\label{vecteur3_d_8h_aad53320b8ee804e6ea290d2ef538ba63}} 
+\index{vecteur3D.h@{vecteur3D.h}!afficher@{afficher}}
+\index{afficher@{afficher}!vecteur3D.h@{vecteur3D.h}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Affichage (x,y,z) d\textquotesingle{}un Vecteur 3. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em v} & Coordonnées d\textquotesingle{}une case\\
+\hline
+\mbox{\texttt{ in}}  & {\em Coordonnées} & d\textquotesingle{}une case \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vecteur3_d_8h_ab7192a0ac784aa3ed46139dc68c523e7}\label{vecteur3_d_8h_ab7192a0ac784aa3ed46139dc68c523e7}} 
+\index{vecteur3D.h@{vecteur3D.h}!egal@{egal}}
+\index{egal@{egal}!vecteur3D.h@{vecteur3D.h}}
+\doxysubsubsection{\texorpdfstring{egal()}{egal()}}
+{\footnotesize\ttfamily bool egal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Test d\textquotesingle{}égalité entre deux Vecteurs 3 (ssi toutes coordonnées égales) 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em v1} & Vremier vecteur \\
+\hline
+\mbox{\texttt{ in}}  & {\em v2} & Vecond vecteur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si toutes les coordonnées sont égales, false sinon
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em v1} & Premier vecteur \\
+\hline
+\mbox{\texttt{ in}}  & {\em v2} & Second vecteur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si toutes les coordonnées sont égales, false sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vecteur3_d_8h_a2e4cb136cbf6d5cbda8233914cf8cd5d}\label{vecteur3_d_8h_a2e4cb136cbf6d5cbda8233914cf8cd5d}} 
+\index{vecteur3D.h@{vecteur3D.h}!from\_list@{from\_list}}
+\index{from\_list@{from\_list}!vecteur3D.h@{vecteur3D.h}}
+\doxysubsubsection{\texorpdfstring{from\_list()}{from\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} from\+\_\+list (\begin{DoxyParamCaption}\item[{const int}]{crd\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Passage d\textquotesingle{}un tableau de 3 entiers à un Vecteur 3. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em crd} & Vableau de 3 entiers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vecteur 3 issu de la conversion
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em crd} & Tableau de 3 entiers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vecteur 3 issu de la conversion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vecteur3_d_8h_a67a54f5ee9fb0739c913afba4fa7badf}\label{vecteur3_d_8h_a67a54f5ee9fb0739c913afba4fa7badf}} 
+\index{vecteur3D.h@{vecteur3D.h}!inv\_y@{inv\_y}}
+\index{inv\_y@{inv\_y}!vecteur3D.h@{vecteur3D.h}}
+\doxysubsubsection{\texorpdfstring{inv\_y()}{inv\_y()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} inv\+\_\+y (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{v,  }\item[{const int}]{max\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Inversion des ordonnées d\textquotesingle{}un Vecteur 3 par rapport au y\+\_\+max. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em v} & Vecteur 3D \\
+\hline
+\mbox{\texttt{ in}}  & {\em max\+\_\+y} & Valeur maximale d\textquotesingle{}ordonnée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vecteur avec coordonnée y inversée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vecteur3_d_8h_ac464ede94b2cb4d8d0101f8653c0f31c}\label{vecteur3_d_8h_ac464ede94b2cb4d8d0101f8653c0f31c}} 
+\index{vecteur3D.h@{vecteur3D.h}!tuple@{tuple}}
+\index{tuple@{tuple}!vecteur3D.h@{vecteur3D.h}}
+\doxysubsubsection{\texorpdfstring{tuple()}{tuple()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} tuple (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Création d\textquotesingle{}un vecteur à trois coordonnées. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em x} & Coordonnée d\textquotesingle{}abscisse \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Coordonnée d\textquotesingle{}ordonnée \\
+\hline
+\mbox{\texttt{ in}}  & {\em z} & Numéro de face \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le vecteur v 
+\end{DoxyReturn}

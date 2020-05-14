@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SDA 2019-20 Ruban de Möbius:  Fichier source de C:/PJ_SDA/vecteur3D.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SDA 2019-20 Ruban de Möbius
+   &#160;<span id="projectnumber">sp5_03.01.2020</span>
+   </div>
+   <div id="projectbrief">Pathfinding dans un labyrinthe sur un ruban de Möbius</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/PJ_SDA/vecteur3D.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="vecteur3_d_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_vec3.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_vec3.html">Vec3</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> x; <span class="comment">// Coordonnée x du point (colonne)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> y; <span class="comment">// Coordonnée y du point (ligne)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> z; <span class="comment">// Coordonnée z du point (face)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="struct_vec3.html">Vec3</a> <a class="code" href="vecteur3_d_8h.html#ac464ede94b2cb4d8d0101f8653c0f31c">tuple</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="struct_vec3.html">Vec3</a> <a class="code" href="vecteur3_d_8h.html#a2e4cb136cbf6d5cbda8233914cf8cd5d">from_list</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> crd[3]);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vecteur3_d_8h.html#aad53320b8ee804e6ea290d2ef538ba63">afficher</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; v);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="vecteur3_d_8h.html#ab7192a0ac784aa3ed46139dc68c523e7">egal</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; v1, <span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; v2);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="struct_vec3.html">Vec3</a> <a class="code" href="vecteur3_d_8h.html#a67a54f5ee9fb0739c913afba4fa7badf">inv_y</a>(<span class="keyword">const</span> <a class="code" href="struct_vec3.html">Vec3</a>&amp; v, <span class="keyword">const</span> <span class="keywordtype">int</span> max_y);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="avecteur3_d_8h_html_ac464ede94b2cb4d8d0101f8653c0f31c"><div class="ttname"><a href="vecteur3_d_8h.html#ac464ede94b2cb4d8d0101f8653c0f31c">tuple</a></div><div class="ttdeci">Vec3 tuple(int x, int y, int z)</div><div class="ttdoc">Création d'un vecteur à trois coordonnées.</div><div class="ttdef"><b>Definition:</b> vecteur3D.cpp:19</div></div>
+<div class="ttc" id="avecteur3_d_8h_html_a67a54f5ee9fb0739c913afba4fa7badf"><div class="ttname"><a href="vecteur3_d_8h.html#a67a54f5ee9fb0739c913afba4fa7badf">inv_y</a></div><div class="ttdeci">Vec3 inv_y(const Vec3 &amp;v, const int max_y)</div><div class="ttdoc">Inversion des ordonnées d'un Vecteur 3 par rapport au y_max.</div><div class="ttdef"><b>Definition:</b> vecteur3D.cpp:64</div></div>
+<div class="ttc" id="avecteur3_d_8h_html_a2e4cb136cbf6d5cbda8233914cf8cd5d"><div class="ttname"><a href="vecteur3_d_8h.html#a2e4cb136cbf6d5cbda8233914cf8cd5d">from_list</a></div><div class="ttdeci">Vec3 from_list(const int crd[3])</div><div class="ttdoc">Passage d'un tableau de 3 entiers à un Vecteur 3.</div><div class="ttdef"><b>Definition:</b> vecteur3D.cpp:29</div></div>
+<div class="ttc" id="astruct_vec3_html"><div class="ttname"><a href="struct_vec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> vecteur3D.h:13</div></div>
+<div class="ttc" id="avecteur3_d_8h_html_aad53320b8ee804e6ea290d2ef538ba63"><div class="ttname"><a href="vecteur3_d_8h.html#aad53320b8ee804e6ea290d2ef538ba63">afficher</a></div><div class="ttdeci">void afficher(const Vec3 &amp;v)</div><div class="ttdoc">Affichage (x,y,z) d'un Vecteur 3.</div><div class="ttdef"><b>Definition:</b> vecteur3D.cpp:41</div></div>
+<div class="ttc" id="avecteur3_d_8h_html_ab7192a0ac784aa3ed46139dc68c523e7"><div class="ttname"><a href="vecteur3_d_8h.html#ab7192a0ac784aa3ed46139dc68c523e7">egal</a></div><div class="ttdeci">bool egal(const Vec3 &amp;v1, const Vec3 &amp;v2)</div><div class="ttdoc">Test d'égalité entre deux Vecteurs 3 (ssi toutes coordonnées égales)</div><div class="ttdef"><b>Definition:</b> vecteur3D.cpp:51</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

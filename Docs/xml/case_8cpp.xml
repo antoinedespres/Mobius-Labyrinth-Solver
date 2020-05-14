@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="case_8cpp" kind="file" language="C++">
+    <compoundname>case.cpp</compoundname>
+    <includes refid="case_8h" local="yes">case.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cassert</label>
+      </node>
+      <node id="3">
+        <label>vecteur3D.h</label>
+        <link refid="vecteur3_d_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/PJ_SDA/case.cpp</label>
+        <link refid="case_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="case_8cpp_1abe9e4a9bfad2f7b0ba14be152e7e78eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool est_valide</definition>
+        <argsstring>(const typeCase tc)</argsstring>
+        <name>est_valide</name>
+        <param>
+          <type>const typeCase</type>
+          <declname>tc</declname>
+        </param>
+        <briefdescription>
+<para>Renvoie vrai ssi le type de case d&apos;entrée est valide. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Renvoie vrai ssi le type de case d&apos;entrÃ©e est valide.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type de case à vérifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.cpp" line="16" column="6" bodyfile="C:/PJ_SDA/case.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="case_8cpp_1ad95785d41b5cf7e883e4361d26f496cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* string</definition>
+        <argsstring>(const Case &amp;c, bool mecontent)</argsstring>
+        <name>string</name>
+        <param>
+          <type>const <ref refid="struct_case" kindref="compound">Case</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mecontent</declname>
+        </param>
+        <briefdescription>
+<para>Convertit une <ref refid="struct_case" kindref="compound">Case</ref> en chaîne de caractères. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convertit une <ref refid="struct_case" kindref="compound">Case</ref> en chaÃ®ne de caractÃ¨res.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_case" kindref="compound">Case</ref> à convertir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Chaîne de caractères issue de la conversion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.cpp" line="25" column="6" bodyfile="C:/PJ_SDA/case.cpp" bodystart="25" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="case_8cpp_1a424eea0feba95b8174bd93553480999d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_case" kindref="compound">Case</ref></type>
+        <definition>Case initialiser</definition>
+        <argsstring>(char c, Vec3 crd)</argsstring>
+        <name>initialiser</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vec3" kindref="compound">Vec3</ref></type>
+          <declname>crd</declname>
+        </param>
+        <briefdescription>
+<para>Convertit un char en <ref refid="struct_case" kindref="compound">Case</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_case" kindref="compound">Case</ref> à convertir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">crd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordonnées 3D de la case </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Chaîne de caractères issue de la conversion </para>
+</simplesect>
+<simplesect kind="pre"><para>Le char d&apos;entrée correspond à un type de case valide </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.cpp" line="44" column="6" bodyfile="C:/PJ_SDA/case.cpp" bodystart="44" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="case_8cpp_1a120879ea632907df9cd09960b53bf658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_crd</definition>
+        <argsstring>(const Case &amp;c)</argsstring>
+        <name>afficher_crd</name>
+        <param>
+          <type>const <ref refid="struct_case" kindref="compound">Case</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Affiche les coordonnées d&apos;une <ref refid="struct_case" kindref="compound">Case</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Affiche les coordonnÃ©es d&apos;une <ref refid="struct_case" kindref="compound">Case</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_case" kindref="compound">Case</ref> dont on souhaite afficher les coordonnées </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/PJ_SDA/case.cpp" line="60" column="6" bodyfile="C:/PJ_SDA/case.cpp" bodystart="60" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Composant case Structures de données et algorithmes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Projet DesprésGr109NougaretGr109 <simplesect kind="author"><para>Antoine Després, Anicet Nougaret </para>
+</simplesect>
+<simplesect kind="version"><para>1 06/01/20 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="case_8h" kindref="compound">case.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="case_8cpp_1abe9e4a9bfad2f7b0ba14be152e7e78eb" kindref="member">est_valide</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>typeCase<sp/>tc)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tc<sp/>==<sp/>MUR<sp/>||<sp/>tc<sp/>==<sp/>CHEMIN<sp/>||<sp/>tc<sp/>==<sp/>DRAGON<sp/>||<sp/>tc<sp/>==<sp/>PLAN;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="case_8cpp_1ad95785d41b5cf7e883e4361d26f496cd" kindref="member">string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Case</ref>&amp;<sp/>c,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mecontent)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[2];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>str[0]<sp/>=<sp/>(char)<sp/>c.type;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(c.visite)<sp/>str[0]<sp/>=<sp/>&apos;V&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(c.dans_chemin<sp/>||<sp/>c.type<sp/>==<sp/>DRAGON)<sp/>str[0]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;C&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mecontent<sp/>&amp;&amp;<sp/>c.type<sp/>!=<sp/>PLAN)<sp/>str[0]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mecontent<sp/>&amp;&amp;<sp/>c.type<sp/>==<sp/>PLAN)<sp/>str[0]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;P&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>str[1]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>str;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="struct_case" kindref="compound">Case</ref><sp/><ref refid="case_8cpp_1a424eea0feba95b8174bd93553480999d" kindref="member">initialiser</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="struct_vec3" kindref="compound">Vec3</ref><sp/>crd)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>typeCase<sp/>tc<sp/>=<sp/>(typeCase)<sp/>c;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(<ref refid="case_8cpp_1abe9e4a9bfad2f7b0ba14be152e7e78eb" kindref="member">est_valide</ref>(tc));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_case" kindref="compound">Case</ref><sp/>ca;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ca.type<sp/>=<sp/>tc;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>ca.crd<sp/>=<sp/>crd;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>ca.ordre<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>ca.visite<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>ca.dans_chemin<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ca;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="case_8cpp_1a120879ea632907df9cd09960b53bf658" kindref="member">afficher_crd</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_case" kindref="compound">Case</ref>&amp;<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="item_8cpp_1a1adc0a2d8a310166ef1696c4badaa0ef" kindref="member">afficher</ref>(c.crd);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/PJ_SDA/case.cpp"/>
+  </compounddef>
+</doxygen>

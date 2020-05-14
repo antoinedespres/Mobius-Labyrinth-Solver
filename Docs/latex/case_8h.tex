@@ -1,0 +1,156 @@
+\hypertarget{case_8h}{}\doxysection{Référence du fichier C\+:/\+P\+J\+\_\+\+S\+D\+A/case.h}
+\label{case_8h}\index{C:/PJ\_SDA/case.h@{C:/PJ\_SDA/case.h}}
+
+
+Composant case Structures de données et algorithmes.  
+
+
+{\ttfamily \#include \char`\"{}vecteur3\+D.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_case}{Case}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{case_8h_a0b480ec328ec535b1645b20a2c4d4625}\label{case_8h_a0b480ec328ec535b1645b20a2c4d4625}} 
+enum {\bfseries type\+Case} \{ {\bfseries M\+UR} = \textquotesingle{}\#\textquotesingle{}, 
+{\bfseries C\+H\+E\+M\+IN} = \textquotesingle{}+\textquotesingle{}, 
+{\bfseries D\+R\+A\+G\+ON} = \textquotesingle{}D\textquotesingle{}, 
+{\bfseries P\+L\+AN} = \textquotesingle{}P\textquotesingle{}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{case_8h_abe9e4a9bfad2f7b0ba14be152e7e78eb}{est\+\_\+valide}} (const type\+Case tc)
+\begin{DoxyCompactList}\small\item\em Renvoie vrai ssi le type de case d\textquotesingle{}entrée est valide. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{case_8h_a0599e04e3afd86b70d9631d30cadec6b}{string}} (const \mbox{\hyperlink{struct_case}{Case}} \&c, bool mecontent=false)
+\begin{DoxyCompactList}\small\item\em Convertit une \mbox{\hyperlink{struct_case}{Case}} en chaîne de caractères. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_case}{Case}} \mbox{\hyperlink{case_8h_a424eea0feba95b8174bd93553480999d}{initialiser}} (char c, \mbox{\hyperlink{struct_vec3}{Vec3}} crd)
+\begin{DoxyCompactList}\small\item\em Convertit un char en \mbox{\hyperlink{struct_case}{Case}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{case_8h_a120879ea632907df9cd09960b53bf658}{afficher\+\_\+crd}} (const \mbox{\hyperlink{struct_case}{Case}} \&c)
+\begin{DoxyCompactList}\small\item\em Affiche les coordonnées d\textquotesingle{}une \mbox{\hyperlink{struct_case}{Case}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Composant case Structures de données et algorithmes. 
+
+Projet Després\+Gr109\+Nougaret\+Gr109 \begin{DoxyAuthor}{Auteur}
+Antoine Després, Anicet Nougaret 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 06/01/20 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{case_8h_a120879ea632907df9cd09960b53bf658}\label{case_8h_a120879ea632907df9cd09960b53bf658}} 
+\index{case.h@{case.h}!afficher\_crd@{afficher\_crd}}
+\index{afficher\_crd@{afficher\_crd}!case.h@{case.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_crd()}{afficher\_crd()}}
+{\footnotesize\ttfamily void afficher\+\_\+crd (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_case}{Case}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Affiche les coordonnées d\textquotesingle{}une \mbox{\hyperlink{struct_case}{Case}}. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em c} & \mbox{\hyperlink{struct_case}{Case}} dont on souhaite afficher les coordonnées\\
+\hline
+\end{DoxyParams}
+Affiche les coordonnées d\textquotesingle{}une \mbox{\hyperlink{struct_case}{Case}}.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em c} & \mbox{\hyperlink{struct_case}{Case}} dont on souhaite afficher les coordonn�es \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{case_8h_abe9e4a9bfad2f7b0ba14be152e7e78eb}\label{case_8h_abe9e4a9bfad2f7b0ba14be152e7e78eb}} 
+\index{case.h@{case.h}!est\_valide@{est\_valide}}
+\index{est\_valide@{est\_valide}!case.h@{case.h}}
+\doxysubsubsection{\texorpdfstring{est\_valide()}{est\_valide()}}
+{\footnotesize\ttfamily bool est\+\_\+valide (\begin{DoxyParamCaption}\item[{const type\+Case}]{tc }\end{DoxyParamCaption})}
+
+
+
+Renvoie vrai ssi le type de case d\textquotesingle{}entrée est valide. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em tc} & Type de case à vérifier\\
+\hline
+\end{DoxyParams}
+Renvoie vrai ssi le type de case d\textquotesingle{}entrée est valide.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em tc} & Type de case � v�rifier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{case_8h_a424eea0feba95b8174bd93553480999d}\label{case_8h_a424eea0feba95b8174bd93553480999d}} 
+\index{case.h@{case.h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!case.h@{case.h}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_case}{Case}} initialiser (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{crd }\end{DoxyParamCaption})}
+
+
+
+Convertit un char en \mbox{\hyperlink{struct_case}{Case}}. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em c} & \mbox{\hyperlink{struct_case}{Case}} à convertir \\
+\hline
+\mbox{\texttt{ in}}  & {\em crd} & Coordonnées 3D de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Chaîne de caractères issue de la conversion 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Le char d\textquotesingle{}entrée correspond à un type de case valide
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em c} & \mbox{\hyperlink{struct_case}{Case}} � convertir \\
+\hline
+\mbox{\texttt{ in}}  & {\em crd} & Coordonn�es 3D de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Cha�ne de caract�res issue de la conversion 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Le char d\textquotesingle{}entr�e correspond � un type de case valide 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{case_8h_a0599e04e3afd86b70d9631d30cadec6b}\label{case_8h_a0599e04e3afd86b70d9631d30cadec6b}} 
+\index{case.h@{case.h}!string@{string}}
+\index{string@{string}!case.h@{case.h}}
+\doxysubsubsection{\texorpdfstring{string()}{string()}}
+{\footnotesize\ttfamily char$\ast$ string (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_case}{Case}} \&}]{c,  }\item[{bool}]{mecontent }\end{DoxyParamCaption})}
+
+
+
+Convertit une \mbox{\hyperlink{struct_case}{Case}} en chaîne de caractères. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em c} & \mbox{\hyperlink{struct_case}{Case}} à convertir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Chaîne de caractères issue de la conversion
+\end{DoxyReturn}
+Convertit une \mbox{\hyperlink{struct_case}{Case}} en chaîne de caractères.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em c} & \mbox{\hyperlink{struct_case}{Case}} � convertir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Cha�ne de caract�res issue de la conversion 
+\end{DoxyReturn}
